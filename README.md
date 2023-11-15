@@ -10,6 +10,7 @@ Before you go down this path, there are few things to keep in mind :
 3. Give yourself enough time to learn as Vi/Vim has a steep learning curve.
 
 
+
 # Learning Path
 1. Understand Vi motion 
 2. Learn `lua` - lightweight scripting language
