@@ -12,6 +12,7 @@ Before you go down this path, there are few things to keep in mind :
 
 
 # Learning Path
+
 1. Understand Vi motion 
 2. Learn `lua` - lightweight scripting language
 
