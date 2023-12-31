@@ -9,9 +9,7 @@ Before you go down this path, there are few things to keep in mind :
 2. You need to have lot of patience so take small steps.
 3. Give yourself enough time to learn as Vi/Vim has a steep learning curve.
 
-
-
-# Learning Path
+## Learning Path
 
 1. Understand Vi motion 
 2. Learn `lua` - lightweight scripting language
@@ -23,11 +21,13 @@ Before you go down this path, there are few things to keep in mind :
   - `brew install neovim` - This will install NeoVim
   - `brew install fd` - Alternative to *find* command
   - `brew install ripgrep` - Real time grep
-  
+  - `brew upgrade nvim` - If you want to upgrade to the latest stable version of neovim
 
 
 
 # Config Files
+
+- `~/.config/nvim/init.lua` - Is where nvim looks for the 1st file
 
 
 # Folder Structure
