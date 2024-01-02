@@ -36,7 +36,10 @@ Before you go down this path, there are few things to keep in mind :
 # Folder Structure
 
 - `~/.config/nvim/init.lua` - Is where nvim looks for the 1st file
-
+- If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
+  ```lua
+    require("lazy").setup("plugins") -- this will point to plugins.lua file 
+  ```
 
 
 # Beginners
@@ -45,9 +48,8 @@ Before you go down this path, there are few things to keep in mind :
    ```vim
     require("lazy").setup(plugins, opt)
    ```
-Setup loads plugins and also aditional options. It will also call config function for additional customisation.
-Both Plugins and opts can be kept as separete table. 
-
+Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
+Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
 
 
 
