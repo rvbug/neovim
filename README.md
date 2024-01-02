@@ -40,7 +40,13 @@ Before you go down this path, there are few things to keep in mind :
 
 
 # Beginners
-If you are new to Vim (Vi) or NeoVim, please check the following materials to get started. 
+
+1. To require lazy we will use the following command
+   ```vim
+    require("lazy").setup(plugins, opt)
+   ```
+Setup loads plugins and also aditional options. It will also call config function for additional customisation.
+Both Plugins and opts can be kept as separete table. 
 
 
 
