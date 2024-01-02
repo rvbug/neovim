@@ -13,6 +13,9 @@ Before you go down this path, there are few things to keep in mind :
 
 1. Understand Vi motion 
 2. Learn `lua` - lightweight scripting language
+3. Learn how vim commands are mapped to the nvim
+4. Start configuring your IDE
+
 
 # Installation
 
@@ -21,27 +24,25 @@ Before you go down this path, there are few things to keep in mind :
   - `brew install neovim` - This will install NeoVim
   - `brew install fd` - Alternative to *find* command
   - `brew install ripgrep` - Real time grep
-  - `brew upgrade nvim` - If you want to upgrade to the latest stable version of neovim
+  - `brew upgrade nvim` - If you want to upgrade to the latest stable version of neovim  
 
 
+# Packages 
+  - Lazy - We will be using Lazy as our package manager. This is much more efficient 
+  - Color Scheme - This is personal preference, you can install the package you like 
 
-# Config Files
-
-- `~/.config/nvim/init.lua` - Is where nvim looks for the 1st file
 
 
 # Folder Structure
 
+- `~/.config/nvim/init.lua` - Is where nvim looks for the 1st file
 
 
 
 # Beginners
 If you are new to Vim (Vi) or NeoVim, please check the following materials to get started. 
 
-`Please note: `  
- - VI/VIM in general has a learning curve but speed will gradually increase and you will become more efficient
- - Suggestion is to start with VI motion and learn Lua
- - Lua is a very small scripting laguage
+
 
 
 
