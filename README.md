@@ -1,6 +1,17 @@
 
-NeoVim as IDE
----
+Neovim as IDE
+
+# Introduction
+Neovim is one of the best modal IDE out there. You have the freedom and flexibilty to customise it the way you want. It is blazingly fast too!!
+
+
+
+< My Neovim IDE - Screenshot/Video goes here >
+
+
+
+
+
 
 # Pre-requisites 
 Before you go down this path, there are few things to keep in mind :
@@ -8,38 +19,49 @@ Before you go down this path, there are few things to keep in mind :
 1. This is going to be challenging .. but what's the fun if it's easy.
 2. You need to have lot of patience so take small steps.
 3. Give yourself enough time to learn as Vi/Vim has a steep learning curve.
+4. Finally, read..read...read lots of documentation
+   
 
 ## Learning Path
 
-1. Understand Vi motion 
+1. Understand Vi/Vim motion, objects
 2. Learn `lua` - lightweight scripting language
-3. Learn how vim commands are mapped to the nvim
+3. Understand how vim commands are mapped to the nvim
 4. Start configuring your IDE
 
 
 # Installation
 
-* `Mac OS` 
+* Mac OS     - `brew install neovim`
+* Arch Linux - `sudo pacman -S neovim`
+* Debian     - `sudo apt-get install neovim`
 
-  - `brew install neovim` - This will install NeoVim
-  - `brew install fd` - Alternative to *find* command
-  - `brew install ripgrep` - Real time grep
-  - `brew upgrade nvim` - If you want to upgrade to the latest stable version of neovim  
+Some additional installation required are :
+
+`brew install fd` - Alternative to *find* command
+`brew install ripgrep` - Real time grep
+
 
 
 # Packages 
-  - Lazy - We will be using Lazy as our package manager. This is much more efficient 
-  - Color Scheme - This is personal preference, you can install the package you like 
+  - Lazy - We will be using Lazy as our package manager. This is very efficient 
+  - Color Scheme - This is personal preference, you can install the package you like. I am going with nightfox/edge
+  - Telescope
+  - Tree Sitter
+
 
 
 
 # Folder Structure
 
-- `~/.config/nvim/init.lua` - Is where nvim looks for the 1st file
+- `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
 - If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
   ```lua
     require("lazy").setup("plugins") -- this will point to plugins.lua file 
   ```
+- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
+ Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
+
 
 
 # Beginners
