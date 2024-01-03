@@ -48,8 +48,8 @@ Some additional installation required are :
   - Color Scheme - This is personal preference, you can install the package you like. I am going with nightfox/edge
   - Telescope
   - Tree Sitter
-
-
+  - LSP Config
+  - Lua Line
 
 
 # Folder Structure
