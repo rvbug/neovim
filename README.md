@@ -62,7 +62,7 @@ LSP is Language Server Protocol which uses open json rpc standard. This protocol
 1. nvim-cmp - A completion engine for neovim and shows the completion as you type. It gets help from external 3rd party sources/repo for completion & snippets
 2. luasnip - A snippet engine which is used as a source and also for snippet for nvim-cmp
 3. cmp.luasnip - used as a luasnip completion source for nvim-cmp
-4. Testing
+4. Testing checking for changes from nvim now
 
 
 # Folder Structure
