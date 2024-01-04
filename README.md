@@ -50,6 +50,20 @@ Some additional installation required are :
   - Lua Line
 
 
+## LSP
+This is the most challenging part of the configration.
+
+### what is LSP
+LSP is Language Server Protocol which uses open json rpc standard. This protocol helps us to communicate between Language Server on your machine with text editors
+
+<image>
+
+## Autocompletion
+1. nvim-cmp - A completion engine for neovim and shows the completion as you type. It gets help from external 3rd party sources/repo for completion & snippets
+2. luasnip - A snippet engine which is used as a source and also for snippet for nvim-cmp
+3. cmp.luasnip - used as a luasnip completion source for nvim-cmp
+
+
 # Folder Structure
 
 - `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
