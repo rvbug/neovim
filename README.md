@@ -11,8 +11,6 @@ Neovim is one of the best modal IDE out there. You have the freedom and flexibil
 
 
 
-
-
 # Pre-requisites 
 Before you go down this path, there are few things to keep in mind :
 
