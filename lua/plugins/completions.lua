@@ -13,11 +13,13 @@ return {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require("cmp")
+      -- for nvim-cmp to work, we need luasnip/vsnip etc
+      -- we will be using luasnip as configured below
       require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
         snippet = {
-          -- expand fuction runs when you try to expand
+          -- nvim-cmp needs luasnip for expanding the snippets
           expand = function(args)
             require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
           end,
