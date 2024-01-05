@@ -117,6 +117,42 @@ Plugins will only fetch the and add options. For activating , a specific command
 `tmux`           - TBD Support for multiplexer
 
 
+# Basic Configuration
+| Commands | Description |
+| --- | ---|
+|  `" "` | Space as Leader Key |
+| `:set tabstop=2` |  | 
+| | | 
+
+# Inital Keymaps
+| Command | Mapped to | Description |
+| --- | ---| --- |
+|  `<leader>jk` | | change from insert to cmd mode |
+| `<leader>jk`  |  | | 
+| `<leader>sv`  | |  |
+| `<leader>sh`   | |  |
+| `<leader>se`   | |  |
+| `<leader>sx`   | |  |
+| `<leader>to`| |  |
+| `<leader>tx`| |  |
+| `<leader>tn`| |  |
+| `<leader>tp`| |  |
+| `<leader>sm`| |  |
+| `<leader>e`| |  |
+| `<leader>`| |  |
+| `<leader>`| |  |
+| `<leader>`| |  |
+
+
+
+
+# Package Keymaps
+ 
+| Package | keyboard Mapping | Description |
+|--- | --- | ---|
+| Telescope | `<C-p>` | Find Files |
+| Telescope | `<leader>fg` | Live Grep | 
+
 
 # Folder Structure
 
