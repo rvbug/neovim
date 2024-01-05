@@ -165,6 +165,7 @@ Finally, this is how the folder structure looks like
 - Learn vim movements
 - Update Github content (Recording, Update tables)
 - Find a way to link .config with nvim (shell script)
+- Cleanup Notion documentation (Explore to move to Neorg, gitbook?) [We will link it to my personal site]
 
 
 
