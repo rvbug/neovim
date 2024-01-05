@@ -2,9 +2,10 @@
 Neovim as IDE
 
 # Introduction
-Neovim is one of the best modal IDE out there. You have the freedom and flexibilty to customise it the way you want. It is blazingly fast too!!
+Neovim is brilliant modal editor and blazingly fast!
+This repo helps you get started with using Neovim and provide flexibilty to customise it the way you want.
 
-
+Here's the snapshot of my configuration in action.
 
 < My Neovim IDE - Screenshot/Video goes here >
 
@@ -15,7 +16,7 @@ Neovim is one of the best modal IDE out there. You have the freedom and flexibil
 Before you go down this path, there are few things to keep in mind :
 
 1. This is going to be challenging .. but what's the fun if it's easy.
-2. You need to have lot of patience so take small steps.
+2. You need to have lot of patience.. so take small steps.
 3. Give yourself enough time to learn as Vi/Vim has a steep learning curve.
 4. Finally, read..read...read lots of documentation
    
@@ -23,27 +24,25 @@ Before you go down this path, there are few things to keep in mind :
 ## Learning Path
 
 1. Understand Vi/Vim motion, objects
-2. Learn `lua` - lightweight scripting language
-3. Understand how vim commands are mapped to the nvim
+2. Learn lua - A lightweight scripting language
+3. Understand mapping of Vim & NVim 
 4. Start configuring your IDE
 
 
 # Installation
+I have provided instructions on mac machine but on the Linux version it should work the same with little changes.
 
 * Mac OS     - `brew install neovim`
 * Arch Linux - `sudo pacman -S neovim`
 * Debian     - `sudo apt-get install neovim`
 
-Some additional installation required are :
+Some additional installation required on your machine:
 
-`brew install fd` - Alternative to *find* command
-`brew install ripgrep` - Real time grep
-
-# Structure 
-This is folder structure :
-
-`init.lua` - Where the 
-
+`brew install fd` - Alternative to *find* command  
+`brew install ripgrep` - Real time grep  
+`brew install tmux` - installing tmux   
+`brew install npm` - to install tsserver  
+`brew install rust` - rust compilers and toolchain  
 
 
 # Packages 
@@ -51,16 +50,9 @@ This is folder structure :
   - Color Scheme - This is personal preference, you can install the package you like. I am going with nightfox/edge
   - Telescope
   - Tree Sitter
-  - LSP Config
+  - LSP Config (LSP is the most challenging part of the configration). LSP is Language Server Protocol which uses open json rpc standard. This protocol helps us to communicate between Language Server on your machine with text editors  
   - Lua Line
-
-
-## LSP
-This is the most challenging part of the configration.
-
-### what is LSP
-LSP is Language Server Protocol which uses open json rpc standard. This protocol helps us to communicate between Language Server on your machine with text editors
-
+   
 <image>
 
 ## Autocompletion
@@ -71,33 +63,57 @@ LSP is Language Server Protocol which uses open json rpc standard. This protocol
 5. cmp-nvim-lsp - A completion source for nvim-cmp to display whatever lsp is attached to the buffer
 
 
-# Folder Structure
+# Structure 
+
+This is folder structure & packages which are installed :  
 
 - `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
 - If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
   ```lua
     require("lazy").setup("plugins") -- this will point to plugins.lua file 
   ```
-- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
- Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
 
-
-
-# Beginners
-
-1. To require lazy we will use the following command
+  To require lazy we will use the following command
    ```vim
     require("lazy").setup(plugins, opt)
    ```
 Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
 Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
 
+- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
+ Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
 
 
 
-# Reference Materials
+`lua/keymaps.lua`   - All your key bindings are stored here  
+`lua/options.lua`   - Helps set editor settings  
 
-## Videos
+**Notes**: 
+- Any lua file added under `plugin` folders gets autoloaded so you do not need to require them explicitly.
+- Under this plugin folder, you need to return a table
+- declare a function and add all the additional settings for that plugins.
+
+
+`treesitter`     - A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown.  
+`themes`         - I use edge theme for my neovim. There are tons of them out there. You can chose the one which you like.     
+`telescope`      - A Fuzzy finder. Uses fd, ripgrep for finding files. <C-p> for finding files and <leader>fg for live grep for files  
+`nvim-tree`      - This is a file explorer tree package. To toggle the tree <C-n> is mapped to :NVimTreeToggle.  It has dependency on nvim-web-devicons  
+`none-ls`        - Helps in injecting diagnostics and code action for any buffers/files opened. I have included support for all the programming languages. <leader>gf helps in formatting the files  
+`neorg`          - What orgmode is for emacs, neorg is for nvim. 
+`lualine`        - Status line configuration 
+`lspconfig`      - Language Server Protocol configuration lives here. It is configured for all the programming languages I work on. "K" hover, "gd" is go to defintions, <leader>ca is for code actions   
+`gitsigns`       - Git integration for buffers  
+`completions`    - Code completion support. <C-b> backward scroll, <C-f> scroll away , <C-Space> complete mapping, <C-e> Abort, <CR> select. It also contains cmd line completion and search completions as well.    
+`autopairs`      - Autocompletion of brackets  
+
+
+
+# Folder Structure
+
+
+
+
+
 
 
 ## 
