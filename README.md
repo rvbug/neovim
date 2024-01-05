@@ -159,6 +159,14 @@ Plugins will only fetch the and add options. For activating , a specific command
 Finally, this is how the folder structure looks like
 
 
+# Pending
+- tmux
+- Learn & organize Neorg
+- Learn vim movements
+- Update Github content (Recording, Update tables)
+- Find a way to link .config with nvim (shell script)
+
+
 
 
 
