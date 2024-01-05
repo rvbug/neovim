@@ -63,9 +63,7 @@ Some additional installation required on your machine:
 5. cmp-nvim-lsp - A completion source for nvim-cmp to display whatever lsp is attached to the buffer
 
 
-# Structure 
-
-This is folder structure & packages which are installed :  
+# Packages 
 
 - `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
 - If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
@@ -94,23 +92,35 @@ Plugins will only fetch the and add options. For activating , a specific command
 - declare a function and add all the additional settings for that plugins.
 
 
-`treesitter`     - A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown.  
-`themes`         - I use edge theme for my neovim. There are tons of them out there. You can chose the one which you like.     
-`telescope`      - A Fuzzy finder. Uses fd, ripgrep for finding files. <C-p> for finding files and <leader>fg for live grep for files  
-`nvim-tree`      - This is a file explorer tree package. To toggle the tree <C-n> is mapped to :NVimTreeToggle.  It has dependency on nvim-web-devicons  
-`none-ls`        - Helps in injecting diagnostics and code action for any buffers/files opened. I have included support for all the programming languages. <leader>gf helps in formatting the files  
-`neorg`          - What orgmode is for emacs, neorg is for nvim. 
-`lualine`        - Status line configuration 
-`lspconfig`      - Language Server Protocol configuration lives here. It is configured for all the programming languages I work on. "K" hover, "gd" is go to defintions, <leader>ca is for code actions   
-`gitsigns`       - Git integration for buffers  
-`completions`    - Code completion support. <C-b> backward scroll, <C-f> scroll away , <C-Space> complete mapping, <C-e> Abort, <CR> select. It also contains cmd line completion and search completions as well.    
-`autopairs`      - Autocompletion of brackets  
+`treesitter`     - A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown.
+
+`themes`         - I use edge theme for my neovim. There are tons of them out there. You can chose the one which you like.
+
+`telescope`      - A Fuzzy finder. Uses fd, ripgrep for finding files. <C-p> for finding files and <leader>fg for live grep for files
+
+`nvim-tree`      - This is a file explorer tree package. To toggle the tree <C-n> is mapped to :NVimTreeToggle.  It has dependency on nvim-web-devicons
+
+`none-ls`        - Helps in injecting diagnostics and code action for any buffers/files opened. I have included support for all the programming languages. <leader>gf helps in formatting the files
+
+`neorg`          - What orgmode is for emacs, neorg is for nvim.
+
+`lualine`        - Status line configuration
+
+`lspconfig`      - Language Server Protocol configuration lives here. It is configured for all the programming languages I work on. "K" hover, "gd" is go to defintions, <leader>ca is for code actions
+
+`gitsigns`       - Git integration for buffers
+
+`completions`    - Code completion support. <C-b> backward scroll, <C-f> scroll away , <C-Space> complete mapping, <C-e> Abort, <CR> select. It also contains cmd line completion and search completions as well
+
+`autopairs`      - Autocompletion of brackets
+
+`tmux`           - TBD Support for multiplexer
 
 
 
 # Folder Structure
 
-
+Finally, this is how the folder structure looks like
 
 
 
