@@ -39,6 +39,11 @@ Some additional installation required are :
 `brew install fd` - Alternative to *find* command
 `brew install ripgrep` - Real time grep
 
+# Structure 
+This is folder structure :
+
+`init.lua` - Where the 
+
 
 
 # Packages 
