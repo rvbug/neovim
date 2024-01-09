@@ -35,7 +35,7 @@ Before you go down this path, there are few things to keep in mind :
 * `sudo pacman -S neovim`           - Arch Linux  
 * `sudo apt-get install neovim`     - Debian   
 <br>
----
+
 
 # Folder Structure
 
@@ -49,9 +49,9 @@ This is where nvim looks everytime it loads. The lazy package manager is install
 
 ####  `lua/plugins/`
 
-The best way to keep everything modularize is to split your plugings into their own separate files and add it under this directory 
-Lazy will automatically detect any changes on this folder and loads it. This file should always return a table and ad all the additional settings for that plugins inside the function like shown below.
-If you are using a different package manager like 'Packer' then the approach is different. 
+The best way to keep everything modularize is to split your plugings into their own separate files and add it under this directory.Lazy will automatically detect any changes on this folder and loads it. 
+
+This file should always return a table and ad all the additional settings for that plugins inside the function like shown below. If you are using a different package manager like 'Packer' then the approach is different. 
 
 See the sample setup for `lua/plugins/themes.lua`. This is the same approach for most of the plugins unless specified differently in their documentation. 
 
@@ -74,13 +74,11 @@ return {
 
 ## Additional Installation
 Some additional installation required on your machine, the other LSP & DAP servers, linter and formatter can be installed using `Mason` neovim plugin :
-
  
 `brew install tmux` - Installing tmux   
 `brew install npm` - To install tsserver via Mason  
 `brew install python` - Python   
 `brew install rust` - Rust compilers and toolchain    
-`brew install tmux` - terminal multiplexer
 
 ---
 
@@ -98,7 +96,8 @@ Here are the list of packages that is being used to get you started.
 | lualine.nvim | Package | Status line theme and configuration |
 | autopairs | Package | Autocompletion of brackets  |
 | git-signs | Package | Git integration for buffers  |
-| neorg | Packages | Emacs Org more equivalent for Neovim  |
+| neorg | Package | Emacs Org more equivalent for Neovim  |
+| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 | Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
 | nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
 | luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
@@ -106,6 +105,38 @@ Here are the list of packages that is being used to get you started.
 | friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
 | cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
 | none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+
+---
+
+# Basic Configuration keymaps
+This is the basic configuration I use in **`options.lua`**. 
+
+| Commands | Description |
+| --- | ---|
+| `:h <command name>` | displays help | 
+| `:set number` | show line numbers | 
+| `:set relativenumber` | show line number relative to the cursor| 
+| `:set tabstop=2` | number of space for <tab> | 
+| `:set expandtab` | number of space for <tab> in insert mode| 
+| `:set shiftwidth` | number of space for (auto) indent | 
+
+
+# Keymaps
+The keyboard shortcut for specific commands used in **`keymaps.lua`**. 
+> *I am planning to switch to tmux shortly for window and tile*
+
+| Command | Mapped to | Description |
+| --- | ---| --- |
+| `"  "`| <space> | space is the leader Key  |
+|  `<leader>jk` | | change from insert to cmd mode |
+| `<leader>sv`  |`<C-w>v` |  split window vertically |
+| `<leader>sh`   |`<C-w>h` | split window horizontally |
+| `<leader>sx`   |`<C-w>x` | close currrent window |
+| `<leader>sm`|`:MaximizerToggle<cr>` | toggle window  |
+| `<leader>to`|`:tabnew<cr>`    | create new tab |
+| `<leader>tx`|`:tabclose<cr>` | close the current tab |
+| `<leader>tn`| `:tn<cr>`| move to the next tab |
+| `<leader>tp`|`:tp<cr>` | go to previous tab |
 
 
 ---
@@ -126,42 +157,6 @@ Install fd, ripgrep on your machine
 | Telescope | `<leader>fc` | `:Telescope grep_string<cr>` |find string under cursor | 
 | Telescope | `<leader>fb` | `:Telescope buffers<cr>` |list all open buffers | 
 | Telescope | `<leader>fh` | `:Telescope help_tags<cr>` |list all help tags | 
-
-
-# Basic Configuration keymaps
-This is the basic configuration I use in **`options.lua`**. 
-
-| Commands | Description |
-| --- | ---|
-| `:h <command name>` | displays help | 
-| `:set number` | show line numbers | 
-| `:set relativenumber` | show line number relative to the cursor| 
-| `:set tabstop=2` | number of space for <tab> | 
-| `:set expandtab` | number of space for <tab> in insert mode| 
-| `:set shiftwidth` | number of space for (auto) indent | 
-| `` | | 
-
-
-# Keymaps
-The keyboard shortcut for specific commands used in **`keymaps.lua`**. 
-Basic mapping for splitting window is provided below but we will be using tmux shortly.
-"Mapped
-
-| Command | Mapped to | Description |
-| --- | ---| --- |
-| `"  "`| <space> | space is the leader Key  |
-|  `<leader>jk` | | change from insert to cmd mode |
-| `<leader>sv`  |`<C-w>v` |  split window vertically |
-| `<leader>sh`   |`<C-w>h` | split window horizontally |
-| `<leader>sx`   |`<C-w>x` | close currrent window |
-| `<leader>sm`|`:MaximizerToggle<cr>` | toggle window  |
-| `<leader>to`|`:tabnew<cr>`    | create new tab |
-| `<leader>tx`|`:tabclose<cr>` | close the current tab |
-| `<leader>tn`| `:tn<cr>`| move to the next tab |
-| `<leader>tp`|`:tp<cr>` | go to previous tab |
-
-
-
 
 
 
