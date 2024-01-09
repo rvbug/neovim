@@ -2,17 +2,14 @@
 Neovim as IDE
 
 # Introduction
-Neovim is brilliant modal editor and blazingly fast!
+Neovim is brilliant, blazingly fast, highly configurable modal editor! It is fork of VIM 
 This repo helps you get started with using Neovim and provide flexibilty to customise it the way you want.
 
 Here's the snapshot of my configuration in action.
 
 < My Neovim IDE - Screenshot/Video goes here >
 
-
-
-
-# Pre-requisites 
+ 
 Before you go down this path, there are few things to keep in mind :
 
 1. This is going to be challenging .. but what's the fun if it's easy.
@@ -24,17 +21,16 @@ Before you go down this path, there are few things to keep in mind :
 ## Learning Path
 
 1. Understand Vi/Vim motion, objects
-2. Learn lua - A lightweight scripting language
-3. Understand mapping of Vim & NVim 
+2. Lua - A lightweight scripting language
+3. Understand mapping of Vim & NeoVim 
 4. Start configuring your IDE
 
 
 # Installation
-I have provided instructions on mac machine but on the Linux version it should work the same with little changes.
 
-* Mac OS     - `brew install neovim`
-* Arch Linux - `sudo pacman -S neovim`
-* Debian     - `sudo apt-get install neovim`
+* `brew install neovim`             - Mac OS  
+* `sudo pacman -S neovim`           - Arch Linux  
+* `sudo apt-get install neovim`     - Debian   
 
 Some additional installation required on your machine:
 
@@ -96,7 +92,50 @@ Plugins will only fetch the and add options. For activating , a specific command
 
 `themes`         - I use edge theme for my neovim. There are tons of them out there. You can chose the one which you like.
 
-`telescope`      - A Fuzzy finder. Uses fd, ripgrep for finding files. <C-p> for finding files and <leader>fg for live grep for files
+## Telescope     
+Description: A nice Fuzzy finder package. It internally uses fd, ripgrep for finding files. 
+
+
+### Telescope Mapping
+| Package | keyboard mapping | mapped to |Description |
+|--- | --- | ---| --- |
+| Telescope | `<C-p>` | `:Telescope find_files<cr>` |find files |
+| Telescope | `<leader>fg` | `:Telescope live_grep<cr>` |live grep | 
+| Telescope | `<leader>fc` | `:Telescope grep_string<cr>` |find string under cursor | 
+| Telescope | `<leader>fb` | `:Telescope buffers<cr>` |list all open buffers | 
+| Telescope | `<leader>fb` | `:Telescope help_tags<cr>` |list all help tags | 
+
+
+Prequisties : Install fd, ripgrep on your machine
+`brew install fd`   
+```bash
+➜  ~ fd --help
+A program to find entries in your filesystem
+
+Usage: fd [OPTIONS] [pattern] [path]...
+
+```
+
+`brew install ripgrep`  
+```bash
+➜  ~ rg --help 
+ripgrep 13.0.0
+Andrew Gallant <jamslam@gmail.com>
+
+ripgrep (rg) recursively searches the current directory for a regex pattern.
+By default, ripgrep will respect gitignore rules and automatically skip hidden
+files/directories and binary files.
+
+Use -h for short descriptions and --help for more details.
+
+Project home page: https://github.com/BurntSushi/ripgrep
+
+USAGE:
+    rg [OPTIONS] PATTERN [PATH ...]
+...
+
+```
+
 
 `nvim-tree`      - This is a file explorer tree package. To toggle the tree <C-n> is mapped to :NVimTreeToggle.  It has dependency on nvim-web-devicons
 
@@ -118,40 +157,49 @@ Plugins will only fetch the and add options. For activating , a specific command
 
 
 # Basic Configuration
+This is the basic configuration I use. 
+
 | Commands | Description |
 | --- | ---|
-|  `" "` | Space as Leader Key |
-| `:set tabstop=2` |  | 
-| | | 
+| `:h <command name>` | displays help | 
+| `:set number` | show line numbers | 
+| `:set relativenumber` | show line number relative to the cursor| 
+| `:set tabstop=2` | number of space for <tab> | 
+| `:set expandtab` | number of space for <tab> in insert mode| 
+| `:set shiftwidth` | number of space for (auto) indent | 
+| `` | | 
 
-# Inital Keymaps
+
+# Keymaps
+The keyboard shortcut for specific commands used. 
+Basic mapping for splitting window is provided below but we will be using tmux shortly.
+"Mapped
+
 | Command | Mapped to | Description |
 | --- | ---| --- |
+| `"  "`| <space> | space is the leader Key  |
 |  `<leader>jk` | | change from insert to cmd mode |
-| `<leader>jk`  |  | | 
-| `<leader>sv`  | |  |
-| `<leader>sh`   | |  |
-| `<leader>se`   | |  |
-| `<leader>sx`   | |  |
-| `<leader>to`| |  |
-| `<leader>tx`| |  |
-| `<leader>tn`| |  |
-| `<leader>tp`| |  |
-| `<leader>sm`| |  |
-| `<leader>e`| |  |
-| `<leader>`| |  |
-| `<leader>`| |  |
-| `<leader>`| |  |
-
+| `<leader>sv`  |`<C-w>v` |  split window vertically |
+| `<leader>sh`   |`<C-w>h` | split window horizontally |
+| `<leader>sx`   |`<C-w>x` | close currrent window |
+| `<leader>sm`|`:MaximizerToggle<cr>` | toggle window  |
+| `<leader>to`|`:tabnew<cr>`    | create new tab |
+| `<leader>tx`|`:tabclose<cr>` | close the current tab |
+| `<leader>tn`| `:tn<cr>`| move to the next tab |
+| `<leader>tp`|`:tp<cr>` | go to previous tab |
 
 
 
 # Package Keymaps
  
-| Package | keyboard Mapping | Description |
+| Package | keyboard mapping | mapped to |Description |
 |--- | --- | ---|
-| Telescope | `<C-p>` | Find Files |
-| Telescope | `<leader>fg` | Live Grep | 
+| Telescope | `<C-p>` | `:Telescope find_files<cr>` |find files |
+| Telescope | `<leader>fg` | `:Telescope live_grep<cr>` |live grep | 
+| Telescope | `<leader>fc` | `:Telescope grep_string<cr>` |find string under cursor | 
+| Telescope | `<leader>fb` | `:Telescope buffers<cr>` |list all open buffers | 
+| Telescope | `<leader>fb` | `:Telescope help_tags<cr>` |list all help tags | 
+
 
 
 # Folder Structure
