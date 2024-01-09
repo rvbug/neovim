@@ -7,6 +7,7 @@ Here's the snapshot of my configuration in action.
 
 < My Neovim IDE - Screenshot/Video goes here >
 
+### Note
 * This is going to be challenging .. but what's the fun if it's easy  
 * You need to have lot of patience.. so take small steps  
 * Give yourself enough time to learn as Vi/Vim has a steep learning curve   
