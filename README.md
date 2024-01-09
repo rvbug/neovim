@@ -160,14 +160,9 @@ Install fd, ripgrep on your machine
 
 
 
-
 # Pending
-- tmux
-- Learn & organize Neorg
-- Learn vim movements
-- Update Github content (Recording, Update tables)
-- Find a way to link .config with nvim (shell script)
-- Cleanup Notion documentation (Explore to move to Neorg, gitbook?) [We will link it to my personal site]
+
+- Cleanup Notion documentation and add it to this github [We will link it to my personal site]
 
 
 
