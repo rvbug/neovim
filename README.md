@@ -31,9 +31,36 @@ Before you go down this path, there are few things to keep in mind :
 
 # Folder Structure
 
-This is how the folder structure looks like :
+This is how the folder structure looks like. All the folders should be under `$HOME/.config/nvim`  
+
+* `init.lua` - This is where nvim looks for the 1st file  
+
+* If we create a folder lua and add a file called plugins.lua  then we can just call
+  ```lua
+    require("lazy").setup("plugins") -- this will point to plugins.lua file 
+  ```
+
+* To require lazy we will use the following command
+   ```vim
+    require("lazy").setup(plugins, opt)
+   ```
+* Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
+Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
+
+* Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
+ Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
+
+* `lua/keymaps.lua`   - All your key bindings are stored here   
+* `lua/options.lua`   - Helps set editor settings   
+
 
 ![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
+
+
+- Any lua file added under `plugin` folders gets autoloaded so you do not need to require them explicitly.
+- Under this plugin folder, you need to return a table
+- declare a function and add all the additional settings for that plugins.
+
 
 
 # Notes
@@ -48,33 +75,9 @@ Some additional installation required on your machine:
 `brew install rust` - rust compilers and toolchain  
 `brew install tmux` - terminal multiplexer
 
-## Instructions
-- `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
-- If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
-  ```lua
-    require("lazy").setup("plugins") -- this will point to plugins.lua file 
-  ```
 
-  To require lazy we will use the following command
-   ```vim
-    require("lazy").setup(plugins, opt)
-   ```
-Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
-Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
-
-- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
- Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
-
-
-
-`lua/keymaps.lua`   - All your key bindings are stored here  
-`lua/options.lua`   - Helps set editor settings  
 
 **Notes**: 
-- Any lua file added under `plugin` folders gets autoloaded so you do not need to require them explicitly.
-- Under this plugin folder, you need to return a table
-- declare a function and add all the additional settings for that plugins.
-
 
 
 # Packages 
