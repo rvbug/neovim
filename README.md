@@ -1,9 +1,7 @@
 
-Neovim as IDE
-
 # Introduction
-Neovim is brilliant, blazingly fast, highly configurable modal editor! It is fork of VIM 
-This repo helps you get started with using Neovim and provide flexibilty to customise it the way you want.
+A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
+This repo helps you get started with using Neovim, give you practical tips and provide necessary instructions to customise the way you want it.
 
 Here's the snapshot of my configuration in action.
 
@@ -22,7 +20,7 @@ Before you go down this path, there are few things to keep in mind :
 
 1. Understand Vi/Vim motion, objects
 2. Lua - A lightweight scripting language
-3. Understand mapping of Vim & NeoVim 
+3. Understand mapping relationship between Vim & NeoVim 
 4. Start configuring your IDE
 
 
@@ -42,21 +40,32 @@ Some additional installation required on your machine:
 
 
 # Packages 
-  - Lazy - We will be using Lazy as our package manager. This is very efficient 
-  - Color Scheme - This is personal preference, you can install the package you like. I am going with nightfox/edge
-  - Telescope
-  - Tree Sitter
-  - LSP Config (LSP is the most challenging part of the configration). LSP is Language Server Protocol which uses open json rpc standard. This protocol helps us to communicate between Language Server on your machine with text editors  
-  - Lua Line
-   
-<image>
 
-## Autocompletion
-1. nvim-cmp - A completion engine for neovim and shows the completion as you type but it gets help from external 3rd party sources/repo for completion, snippets suggestions or even from your current buffer. It does not provide snippet supports by itself.
-2. luasnip - A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp
-3. cmp.luasnip - used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it
-4. friendly-snippets - Collection of snippets for all programming languages loaded by luasnip
-5. cmp-nvim-lsp - A completion source for nvim-cmp to display whatever lsp is attached to the buffer
+Here are the list of packages that is being used till now, I will be adding more based on my usage. 
+
+**`Language Server Protocol`** - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
+
+**`Autocompletion engine`** - Uses 3rd party sources for completion, snippets suggestions.  
+
+| Package | Type | Description |
+|--- | --- | ---| 
+| lazy.nvim  | Package Manager | Helps install other packages and themes |
+| nightfox.nvim | Color Theme | It's personal choice. I use 'egde' theme |
+| nvim-tree | Packages | File explorer |
+| telescope.nvim | Package |  Fuzzy Finder |
+| nvim-treesitter | Package |syntax highlighting, parsing and much more |
+| lualine.nvim | Package | Status line theme and format |
+| autopairs | Package | helps generate special character pairs like  [, { , ( |
+| git-signs | Package | buffer git decoration  |
+| neorg | Packages | Emacs Org more equivalent for Neovim  |
+| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
+| luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
+| cmp.luasnip | LSP | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
+| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
+| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
+| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+
+
 
 
 # Packages 
