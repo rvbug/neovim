@@ -37,6 +37,14 @@ Some additional installation required on your machine:
 `brew install tmux` - installing tmux   
 `brew install npm` - to install tsserver  
 `brew install rust` - rust compilers and toolchain  
+`brew install tmux` - terminal multiplexer
+
+
+# Folder Structure
+
+This is how the folder structure looks like :
+
+![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
 
 
 # Packages 
@@ -162,7 +170,7 @@ USAGE:
 
 `autopairs`      - Autocompletion of brackets
 
-`tmux`           - TBD Support for multiplexer
+
 
 
 # Basic Configuration
@@ -211,9 +219,7 @@ Basic mapping for splitting window is provided below but we will be using tmux s
 
 
 
-# Folder Structure
 
-Finally, this is how the folder structure looks like
 
 
 # Pending
