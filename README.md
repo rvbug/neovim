@@ -7,16 +7,15 @@ Here's the snapshot of my configuration in action.
 
 < My Neovim IDE - Screenshot/Video goes here >
 
- 
-Before you go down this path, there are few things to keep in mind :
+* This is going to be challenging .. but what's the fun if it's easy  
+* You need to have lot of patience.. so take small steps  
+* Give yourself enough time to learn as Vi/Vim has a steep learning curve   
+* Finally, read..read...read lots of documentation  
 
-1. This is going to be challenging .. but what's the fun if it's easy.
-2. You need to have lot of patience.. so take small steps.
-3. Give yourself enough time to learn as Vi/Vim has a steep learning curve.
-4. Finally, read..read...read lots of documentation
    
 
-## Learning Path
+# Learning Path
+Before you go down this path, there are few things to keep in mind :
 
 1. Understand Vi/Vim motion, objects
 2. Lua - A lightweight scripting language
@@ -30,6 +29,16 @@ Before you go down this path, there are few things to keep in mind :
 * `sudo pacman -S neovim`           - Arch Linux  
 * `sudo apt-get install neovim`     - Debian   
 
+# Folder Structure
+
+This is how the folder structure looks like :
+
+![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
+
+
+# Notes
+
+## Additional Installation
 Some additional installation required on your machine:
 
 `brew install fd` - Alternative to *find* command  
@@ -39,12 +48,33 @@ Some additional installation required on your machine:
 `brew install rust` - rust compilers and toolchain  
 `brew install tmux` - terminal multiplexer
 
+## Instructions
+- `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
+- If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
+  ```lua
+    require("lazy").setup("plugins") -- this will point to plugins.lua file 
+  ```
 
-# Folder Structure
+  To require lazy we will use the following command
+   ```vim
+    require("lazy").setup(plugins, opt)
+   ```
+Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
+Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
 
-This is how the folder structure looks like :
+- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
+ Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
 
-![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
+
+
+`lua/keymaps.lua`   - All your key bindings are stored here  
+`lua/options.lua`   - Helps set editor settings  
+
+**Notes**: 
+- Any lua file added under `plugin` folders gets autoloaded so you do not need to require them explicitly.
+- Under this plugin folder, you need to return a table
+- declare a function and add all the additional settings for that plugins.
+
 
 
 # Packages 
@@ -78,31 +108,7 @@ Here are the list of packages that is being used till now, I will be adding more
 
 # Packages 
 
-- `~/.config/nvim/init.lua` - This is where nvim looks for the 1st file
-- If we have a folder lua and create plugins.lua `~/.config/nvim/lua/plugins.lua` then we can just call
-  ```lua
-    require("lazy").setup("plugins") -- this will point to plugins.lua file 
-  ```
 
-  To require lazy we will use the following command
-   ```vim
-    require("lazy").setup(plugins, opt)
-   ```
-Setup loads plugins and also aditional options using opts. Both Plugins and opts can be kept as separete table. 
-Plugins will only fetch the and add options. For activating , a specific commands (using vim) or nvim api needs to be called to activate it.
-
-- Ideally to keep it modularise, split your plugings into their own files and add it under this directory  `~/.config/nvim/lua/plugins/`.
- Lazy will detect any changes on this folder and auto loads it. You also need to add a "require" in your main file as long as you return a table.
-
-
-
-`lua/keymaps.lua`   - All your key bindings are stored here  
-`lua/options.lua`   - Helps set editor settings  
-
-**Notes**: 
-- Any lua file added under `plugin` folders gets autoloaded so you do not need to require them explicitly.
-- Under this plugin folder, you need to return a table
-- declare a function and add all the additional settings for that plugins.
 
 
 `treesitter`     - A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown.
