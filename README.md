@@ -13,10 +13,11 @@ Here's the snapshot of my configuration in action.
 * Give yourself enough time to learn as Vi/Vim has a steep learning curve   
 * Finally, read..read...read lots of documentation  
 
-   
+Go over the basics in this section -> [Tutorial](https://github.com/rvbug/nvim/blob/main/Tutorials.md)
 
 # Learning Path
 Before you go down this path, there are few things to keep in mind :
+
 
 1. Understand Vi/Vim motion, objects
 2. Lua - A lightweight scripting language
