@@ -112,7 +112,7 @@ Here are the list of packages that is being used to get you started.
 | --- | --- | --- | --- |
 | | | | |
 
---
+---
 
 # Basic Configuration keymaps
 This is the basic configuration I use in **`options.lua`**. 
