@@ -13,8 +13,6 @@ Here's the snapshot of my configuration in action.
 * Give yourself enough time to learn as Vi/Vim has a steep learning curve   
 * Finally, read..read...read lots of documentation  
 
-Go over the basics in this section -> [Tutorial](https://github.com/rvbug/nvim/blob/main/Tutorials.md)
-
 # Learning Path
 Before you go down this path, there are few things to keep in mind :
 
@@ -162,10 +160,8 @@ Install fd, ripgrep on your machine
 
 
 
-# Pending
-
-- Cleanup Notion documentation and add it to this github [We will link it to my personal site]
-
+# Future
+- DAP Setup for Python and Rust
 
 
 
