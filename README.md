@@ -96,6 +96,7 @@ Here are the list of packages that is being used to get you started.
 | lualine.nvim | Package | Status line theme and configuration |
 | autopairs | Package | Autocompletion of brackets  |
 | git-signs | Package | Git integration for buffers  |
+| comments | Package | smart commenting |
 | neorg | Package | Emacs Org more equivalent for Neovim  |
 | cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 | Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
@@ -105,7 +106,7 @@ Here are the list of packages that is being used to get you started.
 | friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
 | cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
 | none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
-
+| nvim-dap | DAP | Debugging protocol support | 
 ---
 
 # Basic Configuration keymaps
