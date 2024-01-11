@@ -107,6 +107,12 @@ Here are the list of packages that is being used to get you started.
 | none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
 
 ---
+# Vim - Neovim Mapping 
+| Vim | Type | Nvim| Description |
+| --- | --- | --- | --- |
+| | | | |
+
+--
 
 # Basic Configuration keymaps
 This is the basic configuration I use in **`options.lua`**. 
