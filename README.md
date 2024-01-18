@@ -22,19 +22,18 @@ Before you go down this path, there are few things to keep in mind :
 3. Understand mapping relationship between Vim & NeoVim 
 4. Start configuring your IDE
 
-**`Language Server Protocol`** - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
-
-**`Autocompletion engine`** - Uses 3rd party sources for completion, snippets suggestions.  
-
 ---
 
 # Installation
 
-* `brew install neovim`             - Mac OS  
-* `sudo pacman -S neovim`           - Arch Linux  
-* `sudo apt-get install neovim`     - Debian   
-<br>
+| os | command | config file|  
+| --- | --- | ---|
+| mac | *`brew install neovim`* | **`~/.config/nvim/`** | 
+| arch  | *`sudo pacman -S neovim`* | **`~/.config/nvim/`** | 
+| debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
 
+
+---
 
 # Folder Structure
 
@@ -58,11 +57,11 @@ See the sample setup for `lua/plugins/themes.lua`. This is the same approach for
 
 ```lua
 return {
-   "sainnhe/edge,
+   "tiagovla/tokyodark.nvim",
    :
    :
    config = function()
-      vim.cmd("colorscheme edge")
+      vim.cmd("colorscheme tokyodark")
    end
 }
 ```
@@ -70,6 +69,9 @@ return {
 ---
 
 # Notes
+
+**`Language Server Protocol`** - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
+**`Autocompletion engine`** - Uses 3rd party sources for completion, snippets suggestions.  
 
 ## Lua Table
 Lua is a very simple language and has one important data structure called as table. It is important to know how it works to understand the internals and structure of neovim.
@@ -92,7 +94,9 @@ global_ns.config = {
 
 }
 
-global_ns.functions = { }
+global_ns.functions = {
+   square = function(x) return x * x end
+}
 
 global_ns.message = "this is global variable"
 
