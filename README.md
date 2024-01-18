@@ -279,7 +279,3 @@ Description: Parser generator tool and an incremental parsing library.
 # Future
 * DAP Setup 
 
-
-
-
-## Reference
