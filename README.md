@@ -76,6 +76,8 @@ Lua is a very simple language and has one important data structure called as tab
 
 
 
+![image](https://github.com/rvbug/neovim/assets/10928536/c229c4be-0fc5-4cd2-be4b-5b1c71b57eb8)
+
 
 
 ## Additional info
