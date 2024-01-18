@@ -1,7 +1,9 @@
 
 # Introduction
 A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
-This repo helps you get started with using Neovim, give you practical tips and provide necessary instructions to customise the way you want it.
+This repo helps you get started with using Neovim, giving you practical tips and provide necessary instructions to customise your IDE way you want it.
+
+I have tried configuring Neovim using Package Manager like with Packer & Vim Plug but have found Lazy to be more structured. 
 
 Here's the snapshot of my configuration in action.
 
@@ -20,7 +22,7 @@ Before you go down this path, there are few things to keep in mind :
 1. Understand Vi/Vim motion, objects
 2. Learn Lua - A lightweight scripting language
 3. Get basic understanding of VimScript and Lua structure 
-4. Understand mapping relationship between Vim & NeoVim 
+4. Understand relationship between Vim & NeoVim 
 
 ---
 
@@ -54,18 +56,18 @@ This is how the folder structure looks like. All the folders should be under `$H
 ![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
 
 #### `init.lua` 
-This is where nvim looks everytime it loads. The lazy package manager is installed and setup here <br>
-
+This is where nvim looks everytime it loads.  <br>
 
 ####  `lua/plugins/`
 
-The best way to keep everything modularize is to split your plugings into their own separate files and add it under this directory.Lazy will automatically detect any changes on this folder and loads it. 
+The best way to keep everything modularize is to split plugings into their own separate files and add it under this directory.  
+Lazy will automatically detect any changes on this folder and loads it.  
 
-This file should always return a table and ad all the additional settings for that plugins inside the function like shown below. If you are using a different package manager like 'Packer' then the approach is different. 
+Plugin file should always return a table. Additional configuration/settings for that plugins should inside a call back function. 
 
-See the sample setup for `lua/plugins/themes.lua`. This is the same approach for most of the plugins unless specified differently in their documentation. 
+See the sample setup for `lua/plugins/themes.lua`. Same approach is used for most of the plugins unless specified differently in their documentation. 
 
-> *Note: I am still experimenting with moving all the keybindings to keymaps.lua file versus keeping it under their respective plugin file.*
+`config = function() ` is a call back function.
 
 ```lua
 return {
@@ -82,28 +84,28 @@ return {
 
 # Notes
 
-**`Language Server Protocol`** - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
-**`Autocompletion engine`** - Uses 3rd party sources for completion, snippets suggestions.  
+*`Language Server Protocol`* - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
+*`Autocompletion engine`* - Uses 3rd party sources for completion, snippets suggestions.  
 
 ## Lua Table
-Lua is a very simple language and has one important data structure called as table. It is important to know how it works to understand the internals and structure of neovim.
+Lua is a very simple scripting language. It has one important data structure called table. Knowing how it works helps understand the structure of neovim packages. Knowledge of table will help you understand the section *"Vim - NeoVim Mapping"* below.
 
-Look at the image below. You will see `global_ns` as a table with global namespace.
-It contains `config`, `functions` as sub table.
+Look at the tree structure below. You will see `global_ns` as a table with a global namespace.
+It contains `config`, `functions` as sub table.  "Language" is an option under global_ns.config table
 
 ![image](https://github.com/rvbug/neovim/assets/10928536/c229c4be-0fc5-4cd2-be4b-5b1c71b57eb8)
 
 ```lua
 
 -- to understand how lua tables are used, what is vim.opt, vim.bo etc
--- this is one way to understand it 
+
 
 
 global_ns = {}
 
 --sub tables
 global_ns.config = {
-
+    language = "Lua",
 }
 
 global_ns.functions = {
@@ -137,7 +139,6 @@ print(global_ns.external_data.key2)
 | --- | --- | 
 | :h or :help | shows all help options inside of neovim |
 | :option | displays all options available |
-| Tables | Lua has tables which are data struc contains elements inside them |
 | :h vim. | This is a neovim global table   | 
 
 ## Vim - Neovim Mapping 
@@ -153,26 +154,27 @@ print(global_ns.external_data.key2)
 
 Here are the list of packages that is being used to get you started. 
 
-| Package | Type | Description |
-|--- | --- | ---| 
-| lazy.nvim  | Package Manager | Helps install other packages and themes |
-| nightfox.nvim | Color Theme | It's personal choice. I use 'egde' theme |
-| nvim-tree | Packages | This is a file explorer tree package. It has dependency on nvim-web-devicons |
-| telescope.nvim | Package |  Fuzzy Finder |
-| nvim-treesitter | Package |A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown. |
-| lualine.nvim | Package | Status line theme and configuration |
-| autopairs | Package | Autocompletion of brackets  |
-| git-signs | Package | Git integration for buffers  |
-| comments | Package | smart block commenting |
-| neorg | Package | Emacs Org more equivalent for Neovim  |
-| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
-| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
-| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
-| luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
-| cmp.luasnip | LSP | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
-| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
-| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
-| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+| file name| Package | Type | Description |
+| --- |--- | --- | ---| 
+|*init.lua*| lazy.nvim  | Package Manager | Helps install other packages and extends your IDE |
+|*themes.lua*| tokyodark.nvim | Color Theme | It's personal choice. I use 'tokyodark' theme. |
+|*nvim-tree.lua*| nvim-tree | Packages | This is a file explorer tree package. It has dependency on nvim-web-devicons |
+|*telescope.lua*| telescope.nvim | Package |  Fuzzy Finder |
+|*treesitter*| nvim-treesitter | Package |A parser generator tool, I have configured for Lua, JS, Rust, Python, HTML, CSS, Markdown. |
+|*lualine.lua*| lualine.nvim | Package | Status line theme and configuration |
+|*autopairs.lua*| autopairs | Package | Autocompletion of brackets  |
+|*gitsigns.lua*| git-signs | Package | Git integration for buffers  |
+|*comments.lua*| comments | Package | smart block commenting |
+|*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
+|*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
+|*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
+|*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
+|*completions.lua*| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
+|*completions.lua*| luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
+|*completions.lua*| cmp.luasnip | LSP | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
+|completions| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
+|completions| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
+|completions| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
 
 ---
 
