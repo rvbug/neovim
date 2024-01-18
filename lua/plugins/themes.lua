@@ -1,10 +1,12 @@
 return {
-	"sainnhe/edge",
-	lazy = false,
-	name = "edge",
+	-- "sainnhe/edge",
+	"tiagovla/tokyodark.nvim",
+  lazy = false,
+	name = "tokyodark",
 	priority = 1000,
 
 	config = function()
-		vim.cmd("colorscheme edge")
+		vim.cmd("colorscheme tokyodark")
+
 	end,
 }
