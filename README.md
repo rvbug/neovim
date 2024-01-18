@@ -122,12 +122,13 @@ print(global_ns.external_data.key2)
 | :h or :help | shows all help options inside of neovim |
 | :option | displays all options available |
 | Tables | Lua has tables which are data struc contains elements inside them |
-| :h vim. | This is a global table  | 
+| :h vim. | This is a neovim global table   | 
 
 ## Vim - Neovim Mapping 
-| Type | Type | Nvim| Description |
-| --- | --- | --- | --- |
-| command | :set nu | | set commands are typically vim and nvim_* are native to lua |
+| Type | vim cmd | vim option | Nvim| Description |
+| --- | --- | --- | --- | --- |
+| general | :set  | vim.o is variable | vim.opt is table | difference between vim & lua| 
+| command | :set nu | vim.o.number | vim.opt.number | to set number  |
 
 
 ---
