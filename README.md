@@ -128,7 +128,7 @@ print(global_ns.external_data.key2)
 | Type | vim cmd | vim option | Nvim| Description |
 | --- | --- | --- | --- | --- |
 | general | :set  | vim.o is variable | vim.opt is table | difference between vim & lua| 
-| command | :set nu | vim.o.number | vim.opt.number | to set number  |
+| command | :set nu | vim.o.number <br>vim.cmd("set number") | vim.opt.number<br>vim.api.nvim_set_option('number', true) | multiple ways to set number  |
 
 
 ---
