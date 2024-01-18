@@ -13,7 +13,9 @@ vim.cmd("set expandtab")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
-
+-- split the window below & right
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
 local keymap = vim.keymap
 
