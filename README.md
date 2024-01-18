@@ -24,13 +24,22 @@ Before you go down this path, there are few things to keep in mind :
 
 ---
 
-# Installation
+# Neovim Installation
 
-| os | command | config file|  
+| os | command | config file location|  
 | --- | --- | ---|
 | mac | *`brew install neovim`* | **`~/.config/nvim/`** | 
 | arch  | *`sudo pacman -S neovim`* | **`~/.config/nvim/`** | 
 | debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
+
+# Other Prerequisities
+| tools | command | description |  
+| --- | --- | ---|
+| fd |*`brew install fd`* | Alternative to find command |
+| ripgrep |*`brew install ripgrep`* | Real time grep |
+| tmux | *`brew install tmux`*| Terminal Multiplexer|
+| npm | *`brew install npm`*| To install tsserver via Mason|
+| rust | *`brew install rust`*| Rust compilers and toolchain|
 
 
 ---
