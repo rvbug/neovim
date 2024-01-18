@@ -33,12 +33,15 @@ Before you go down this path, there are few things to keep in mind :
 | debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
 
 # Other Prerequisities
+Some additional installation required on your machine, the other LSP & DAP servers, linter and formatter can be installed using `Mason` neovim plugin :
+
 | tools | command | description |  
 | --- | --- | ---|
 | fd |*`brew install fd`* | Alternative to find command |
 | ripgrep |*`brew install ripgrep`* | Real time grep |
 | tmux | *`brew install tmux`*| Terminal Multiplexer|
 | npm | *`brew install npm`*| To install tsserver via Mason|
+| python | *`brew install python`* | Install python |
 | rust | *`brew install rust`*| Rust compilers and toolchain|
 
 
@@ -142,17 +145,7 @@ print(global_ns.external_data.key2)
 | --- | --- | --- | --- | --- |
 | general | :set  | vim.o is variable | vim.opt is table | difference between vim & lua| 
 | command | :set nu | vim.o.number <br>vim.cmd("set number") | vim.opt.number<br>vim.api.nvim_set_option('number', true) | multiple ways to set number  |
-
-
----
-
-# Additional Installation
-Some additional installation required on your machine, the other LSP & DAP servers, linter and formatter can be installed using `Mason` neovim plugin :
- 
-`brew install tmux` - Installing tmux   
-`brew install npm` - To install tsserver via Mason  
-`brew install python` - Python   
-`brew install rust` - Rust compilers and toolchain    
+  
 
 ---
 
@@ -219,12 +212,7 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 ---
 
 ## Telescope     
-Description: A nice Fuzzy finder package. It internally uses fd, ripgrep for finding files.   
-#### Prequisties 
-Install fd, ripgrep on your machine
-
-**`brew install fd`** - Alternative to *find* command  
-**`brew install ripgrep`** - Real time grep  
+Description: A nice Fuzzy finder package. It internally uses fd, ripgrep for finding files. As prequisties you have to install fd, ripgrep as mentioned on the "Other Prerequisities" section above.  
 
 ### Telescope Key Mapping
 | Package | keyboard mapping | mapped to |Description |
@@ -243,4 +231,4 @@ Install fd, ripgrep on your machine
 
 
 
-## 
+## Reference
