@@ -38,7 +38,7 @@ Before you go down this path, there are few things to keep in mind :
 
 # Folder Structure
 
-This is how the folder structure looks like. All the folders should be under `$HOME/.config/nvim`  
+This is how the folder structure looks like. All the folders should be under `$HOME/.config/nvim` 
 
 ![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
 
@@ -74,10 +74,46 @@ return {
 ## Lua Table
 Lua is a very simple language and has one important data structure called as table. It is important to know how it works to understand the internals and structure of neovim.
 
-
+Look at the image below. You will see `global_ns` as a table with global namespace.
+It contains `config`, `functions` as sub table.
 
 ![image](https://github.com/rvbug/neovim/assets/10928536/c229c4be-0fc5-4cd2-be4b-5b1c71b57eb8)
 
+```lua
+
+-- to understand how lua tables are used, what is vim.opt, vim.bo etc
+-- this is one way to understand it 
+
+
+global_ns = {}
+
+--sub tables
+global_ns.config = {
+
+}
+
+global_ns.functions = { }
+
+global_ns.message = "this is global variable"
+
+-- dictionary
+global_ns.external_data = {
+   key_one = "value_one",
+   key_two = 123
+} 
+
+global_ns.coroutine = coroutine.create(function()
+   ...
+end)
+
+-- Example usage:
+print(global_ns.config.language)  
+print(global_ns.functions.square(5))  
+print(global_ns.message)  
+print(global_ns.external_data.key2) 
+
+
+```
 
 
 ## Additional info
