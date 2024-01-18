@@ -71,7 +71,30 @@ return {
 
 # Notes
 
-## Additional Installation
+## Lua Table
+Lua is a very simple language and has one important data structure called as table. It is important to know how it works to understand the internals and structure of neovim.
+
+
+
+
+
+## Additional info
+| command | description 
+| --- | --- | 
+| :h or :help | shows all help options inside of neovim |
+| :option | displays all options available |
+| Tables | Lua has tables which are data struc contains elements inside them |
+| :h vim. | This is a global table  | 
+
+## Vim - Neovim Mapping 
+| Type | Type | Nvim| Description |
+| --- | --- | --- | --- |
+| command | :set nu | | set commands are typically vim and nvim_* are native to lua |
+
+
+---
+
+# Additional Installation
 Some additional installation required on your machine, the other LSP & DAP servers, linter and formatter can be installed using `Mason` neovim plugin :
  
 `brew install tmux` - Installing tmux   
@@ -107,10 +130,6 @@ Here are the list of packages that is being used to get you started.
 | none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
 
 ---
-# Vim - Neovim Mapping 
-| Vim | Type | Nvim| Description |
-| --- | --- | --- | --- |
-| | | | |
 
 ---
 
