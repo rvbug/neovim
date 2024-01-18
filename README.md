@@ -18,9 +18,9 @@ Before you go down this path, there are few things to keep in mind :
 
 
 1. Understand Vi/Vim motion, objects
-2. Lua - A lightweight scripting language
-3. Understand mapping relationship between Vim & NeoVim 
-4. Start configuring your IDE
+2. Learn Lua - A lightweight scripting language
+3. Get basic understanding of VimScript and Lua structure 
+4. Understand mapping relationship between Vim & NeoVim 
 
 ---
 
