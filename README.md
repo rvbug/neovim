@@ -3,7 +3,7 @@
 A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
 This repo helps you get started with using Neovim, giving you practical tips and provide necessary instructions to customise your IDE way you want it.
 
-I have tried configuring Neovim using Package Manager like with Packer & Vim Plug but have found Lazy to be more structured. 
+I have tried configuring Neovim using Package Managers like with Packer & Vim Plug but have found Lazy to be more structured. 
 
 Here's the snapshot of my configuration in action.
 
@@ -35,7 +35,7 @@ Before you go down this path, there are few things to keep in mind :
 | debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
 
 # Other Prerequisities
-Some additional installation required on your machine, the other LSP & DAP servers, linter and formatter can be installed using `Mason` neovim plugin :
+Some additional installations are required on your machine. LSP & DAP servers, linter and formatter can all be installed using `Mason` neovim plugin :
 
 | tools | command | description |  
 | --- | --- | ---|
@@ -56,12 +56,11 @@ This is how the folder structure looks like. All the folders should be under `$H
 ![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
 
 #### `init.lua` 
-This is where nvim looks everytime it loads.  <br>
+This is where nvim looks everytime it starts.  <br>
 
 ####  `lua/plugins/`
 
-The best way to keep everything modularize is to split plugings into their own separate files and add it under this directory.  
-Lazy will automatically detect any changes on this folder and loads it.  
+The best way to keep everything modularize is to split plugings into their own separate files and add it under this directory. Lazy will automatically detect any changes on this folder and loads it.  
 
 Plugin file should always return a table. Additional configuration/settings for that plugins should inside a call back function. 
 
@@ -84,10 +83,10 @@ return {
 
 # Notes
 
-*`Language Server Protocol`* - LSP Config is the most challenging part of the configration which uses open json rpc standard.   
-*`Autocompletion engine`* - Uses 3rd party sources for completion, snippets suggestions.  
+*`Language Server Protocol`* - LSP Config is the most challenging part of the configration. It uses open json rpc standard to communicate with IDE.   
+*`Autocompletion engine`* - Uses 3rd party sources for completion, snippets, suggestions etc.  
 
-## Lua Table
+## *Lua Table*
 Lua is a very simple scripting language. It has one important data structure called table. Knowing how it works helps understand the structure of neovim packages. Knowledge of table will help you understand the section *"Vim - NeoVim Mapping"* below.
 
 Look at the tree structure below. You will see `global_ns` as a table with a global namespace.
@@ -134,18 +133,19 @@ print(global_ns.external_data.key2)
 ```
 
 
-## Additional info
+## *Additional info*
 | command | description 
 | --- | --- | 
 | :h or :help | shows all help options inside of neovim |
+| `:h <command name>` | displays help for that command or function | 
 | :option | displays all options available |
 | :h vim. | This is a neovim global table   | 
 
-## Vim - Neovim Mapping 
-| Type | vim cmd | vim option | Nvim| Description |
-| --- | --- | --- | --- | --- |
-| general | :set  | vim.o is variable | vim.opt is table | difference between vim & lua| 
-| command | :set nu | vim.o.number <br>vim.cmd("set number") | vim.opt.number<br>vim.api.nvim_set_option('number', true) | multiple ways to set number  |
+## *Vim - Neovim Mapping*
+|vim cmd | vim option | Nvim| Description |
+|  --- | --- | --- | --- |
+| :set  | vim.o is variable | vim.opt is table | difference between vim & lua| 
+| :set nu | vim.o.number <br>vim.cmd("set number") | vim.opt.number<br>vim.api.nvim_set_option('number', true) | multiple ways to set number  |
   
 
 ---
@@ -180,17 +180,21 @@ Here are the list of packages that is being used to get you started.
 
 ---
 
-# Basic Configuration keymaps
-This is the basic configuration I use in **`options.lua`**. 
+# Basic Editor Configuration 
+This is the basic configuration I use in **`keymaps.lua`**. 
 
 | Commands | Description |
 | --- | ---|
-| `:h <command name>` | displays help | 
 | `:set number` | show line numbers | 
 | `:set relativenumber` | show line number relative to the cursor| 
 | `:set tabstop=2` | number of space for <tab> | 
 | `:set expandtab` | number of space for <tab> in insert mode| 
 | `:set shiftwidth` | number of space for (auto) indent | 
+| `vim.opt.ignorecase = true`|  switch off case sensitive | 
+| `vim.opt.wrap = false` | set line wraps off | 
+| `vim.opt.splitbelow` | always split below by default | 
+| `vim.opt.splitright` | slipt wiondow to right by default| 
+
 
 
 # Keymaps
@@ -213,22 +217,67 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 
 ---
 
-## Telescope     
+# Telescope     
 Description: A nice Fuzzy finder package. It internally uses fd, ripgrep for finding files. As prequisties you have to install fd, ripgrep as mentioned on the "Other Prerequisities" section above.  
 
-### Telescope Key Mapping
-| Package | keyboard mapping | mapped to |Description |
-|--- | --- | ---| --- |
-| Telescope | `<leader>ff` | `:Telescope find_files<cr>` |find files |
-| Telescope | `<leader>fg` | `:Telescope live_grep<cr>` |live grep | 
-| Telescope | `<leader>fc` | `:Telescope grep_string<cr>` |find string under cursor | 
-| Telescope | `<leader>fb` | `:Telescope buffers<cr>` |list all open buffers | 
-| Telescope | `<leader>fh` | `:Telescope help_tags<cr>` |list all help tags | 
+## *Telescope Key Mapping*
+| keyboard mapping | mapped to |Description |
+| --- | ---| --- |
+| `<leader>ff` | `:Telescope find_files<cr>` |find files |
+| `<leader>fg` | `:Telescope live_grep<cr>` |live grep | 
+| `<leader>fc` | `:Telescope grep_string<cr>` |find string under cursor | 
+| `<leader>fb` | `:Telescope buffers<cr>` |list all open buffers | 
+| `<leader>fh` | `:Telescope help_tags<cr>` |list all help tags | 
+
+---
+
+# Comments
+Description: Comments a line or block of code using the below keystrokes. Extremely helpful!
+You can find more shortcuts on their [github repo](https://github.com/numToStr/Comment.nvim) 
+
+| keystroke | action | 
+| --- | --- | 
+| `gcc` | Toggles the current line using linewise comment |
+| `gbc` | Toggles the current line using blockwise comment | 
+| `[count]gcc` | Toggles the number of line given as a prefix-count using linewise | 
+| `[count]gbc`  | Toggles the number of line given as a prefix-count using blockwise |
+
+---
+
+# Completions
+Description: A completion engine plugin for neovim written in Lua. 
+
+| keystroke | action | 
+| --- | --- | 
+| `<C-b>` |  Sroll backward | 
+| `<C-f>` |  Sroll forward | 
+| `<C-Space>` | Completion | 
+
+---
+
+# Nvim-Tree
+Description: By default, Neovim uses Netrw for file explorer. nvim-tree is a nice replacement for that. 
+
+| keystroke | action | 
+| --- | --- | 
+| `<c-n>` | Toggle File explorer| 
+
+
+# Treesitter 
+Description: Parser generator tool and an incremental parsing library.
+
+| keystroke | action | 
+| --- | --- | 
+| `<leader>gi` | Init selection | 
+| `<leader>ni` | node incremement | 
+| `<leader>nd` | node decrement | 
+| `<leader>si` | scope increment | 
 
 
 
+---
 # Future
-- DAP Setup for Python and Rust
+* DAP Setup 
 
 
 
