@@ -62,7 +62,7 @@ This is where nvim looks everytime it starts.  <br>
 
 The best way to keep everything modularize is to split plugings into their own separate files and add it under this directory. Lazy will automatically detect any changes on this folder and loads it.  
 
-Plugin file should always return a table. Additional configuration/settings for that plugins should inside a call back function. 
+Plugin file should always return a table. Additional configuration/settings for that plugins should be inside a callback function. 
 
 See the sample setup for `lua/plugins/themes.lua`. Same approach is used for most of the plugins unless specified differently in their documentation. 
 
