@@ -34,6 +34,8 @@ Before you go down this path, there are few things to keep in mind :
 | arch  | *`sudo pacman -S neovim`* | **`~/.config/nvim/`** | 
 | debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
 
+---
+
 # Other Prerequisities
 Some additional installations are required on your machine. LSP & DAP servers, linter and formatter can all be installed using `Mason` neovim plugin :
 
