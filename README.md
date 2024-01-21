@@ -276,6 +276,9 @@ Description: Parser generator tool and an incremental parsing library.
 | `<leader>si` | scope increment | 
 
 
+# Tmux
+Tmux is a terminal
+multiplexer which helps you create multiple terminals at once.
 
 ---
 # Future
