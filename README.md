@@ -43,6 +43,7 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 | --- | --- | ---|
 | fd |*`brew install fd`* | Alternative to find command |
 | ripgrep |*`brew install ripgrep`* | Real time grep |
+| lazygit | *`brew install lazygit`* | amazing UI for git |
 | tmux | *`brew install tmux`*| Terminal Multiplexer|
 | npm | *`brew install npm`*| To install tsserver via Mason|
 | python | *`brew install python`* | Install python |
