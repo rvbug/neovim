@@ -63,8 +63,8 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- manual lsp config
 -- will move this to proper config later
-
 keymap.set("n", "<leader>su" , ":lua vim.lsp.buf.hover()<cr>")
 
-
+-- toggleterm shortcut
+keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
 
