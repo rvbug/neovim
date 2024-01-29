@@ -170,6 +170,8 @@ Here are the list of packages that is being used to get you started.
 |*comments.lua*| comments | Package | smart block commenting |
 |*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
 |*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
+|*noice.lua* | noice | Package | UI for commandline, popup and messages |
+|*toggleterm.lua*| toggle term | Package | terminal for neovim |  
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 |*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
 |*completions.lua*| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
@@ -216,6 +218,8 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 | `<leader>tx`|`:tabclose<cr>` | close the current tab |
 | `<leader>tn`| `:tn<cr>`| move to the next tab |
 | `<leader>tp`|`:tp<cr>` | go to previous tab |
+|`<leader>su` | `:lua vim.lsp.buf.hover()<cr>`| lsp completion (will be replaced soon) | 
+|`<leader>tt` | `:ToggleTerm<cr>`| toggle terminal | 
 
 
 ---
