@@ -168,6 +168,7 @@ Here are the list of packages that is being used to get you started.
 |*autopairs.lua*| autopairs | Package | Autocompletion of brackets  |
 |*gitsigns.lua*| git-signs | Package | Git integration for buffers  |
 |*comments.lua*| comments | Package | smart block commenting |
+|*floating-help.lua*| |Package | Floaing help |
 |*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
 |*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
@@ -279,6 +280,15 @@ Description: Parser generator tool and an incremental parsing library.
 | `<leader>ni` | node incremement | 
 | `<leader>nd` | node decrement | 
 | `<leader>si` | scope increment | 
+
+# Floating Help 
+Description: Show help in a floating window
+
+| keystroke | action | 
+| --- | --- | 
+| `<leader>f` | FloatingHelpToggle |
+| `<leader>h` | FloatingHelp <variable> |
+
 
 
 # Tmux
