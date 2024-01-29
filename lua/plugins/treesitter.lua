@@ -17,7 +17,7 @@ return {
 					"luadoc",
 					"markdown",
           "regex",
-          "bash",
+          "bash", 
           "markdown_inline",
 				},
 				highlight = { enable = true },
