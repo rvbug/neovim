@@ -4,7 +4,7 @@ return {
 
   config = function()
     require("floating-help").setup({})
-    vim.keymap.set("n", "<leader>h", ":FloatingHelpToggle<cr>")
-    vim.keymap.set("n", "<leader>f", ":FloatingHelp")
+    vim.keymap.set("n", "<leader>f", ":FloatingHelpToggle<cr>")
+    vim.keymap.set("n", "<leader>h", ":FloatingHelp")
   end,
 }
