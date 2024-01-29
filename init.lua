@@ -2,7 +2,6 @@
 require("keymaps")
 
 
-
 -- setup lazy and look for plugin folder
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
