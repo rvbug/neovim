@@ -174,7 +174,8 @@ Here are the list of packages that is being used to get you started.
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
-|*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI | 
+|*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI |
+|completions|mason-tool-installer | LSP | Helps installing 3rd party tools |
 |*completions.lua*| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
 |*completions.lua*| luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
 |*completions.lua*| cmp.luasnip | LSP | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
