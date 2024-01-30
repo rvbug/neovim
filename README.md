@@ -201,6 +201,8 @@ This is the basic configuration I use in **`keymaps.lua`**.
 | `vim.opt.wrap = false` | set line wraps off | 
 | `vim.opt.splitbelow` | always split below by default | 
 | `vim.opt.splitright` | slipt wiondow to right by default| 
+| `:checkhealth` | check the status of your neovim, LSP, linters etc| 
+
 
 
 
@@ -289,6 +291,13 @@ Description: Show help in a floating window
 | --- | --- | 
 | `<leader>f` | FloatingHelpToggle |
 | `<leader>h` | FloatingHelp <variable> |
+
+
+# Python Setup
+To setup neovim for python and datascience, here are some of the steps to be followed
+- In your virtual env , install *neovim* & *debugpy* along with other datascience/ML libraries  
+- Ensure you install *pyright* python LSP in your *`lspconfig.lua`* file  
+
 
 
 
