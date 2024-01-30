@@ -42,3 +42,4 @@ luac.out
 # additional 
 .DS_Store
 node_modules
+yarn.lock
