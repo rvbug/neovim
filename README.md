@@ -173,6 +173,7 @@ Here are the list of packages that is being used to get you started.
 |*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
+|*gitblame.lua*| Git Blame | Package | Shows Git changes & owner |
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 |*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI |
 |completions|mason-tool-installer | LSP | Helps installing 3rd party tools |
@@ -291,6 +292,14 @@ Description: Show help in a floating window
 | --- | --- | 
 | `<leader>f` | FloatingHelpToggle |
 | `<leader>h` | FloatingHelp <variable> |
+
+# Nvim-Tree
+Description: By default, Neovim uses Netrw for file explorer. nvim-tree is a nice replacement for that. 
+
+| keystroke | action | 
+| --- | --- | 
+| `<leader>gb` | :GitBlameToggle | 
+
 
 
 # Python Setup
