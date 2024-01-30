@@ -45,9 +45,10 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 | ripgrep |*`brew install ripgrep`* | Real time grep |
 | lazygit | *`brew install lazygit`* | amazing UI for git |
 | tmux | *`brew install tmux`*| Terminal Multiplexer|
-| npm | *`brew install npm`*| To install tsserver via Mason|
+| npm | *`brew install npm`*| To install tsserver via Mason + Markdown |
 | python | *`brew install python`* | Install python |
 | rust | *`brew install rust`*| Rust compilers and toolchain|
+| yarn | *`brew install yarn`* | For Markdown preview |
 
 
 ---
