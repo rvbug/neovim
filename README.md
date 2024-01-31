@@ -175,7 +175,10 @@ Here are the list of packages that is being used to get you started.
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
 |*gitblame.lua*| Git Blame | Package | Shows Git changes & owner |
-|markdown.lua| Markdown  | Package | Show Markdown preview |
+|*markdown.lua*| Markdown  | Package | Show Markdown preview |
+|*db.lua*| vim-dadbod | DB | Plugin to interact with the DB|
+|*db.lua*| vim-dadbod-ui| DB UI | UI plugin for DB |
+|*db.lua*| vim-dadbod-completion | DB | Completion engine for DB |
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 |*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI |
 |completions|mason-tool-installer | LSP | Helps installing 3rd party tools |
@@ -185,6 +188,7 @@ Here are the list of packages that is being used to get you started.
 |completions| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
 |completions| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
 |completions| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+
 
 ---
 
