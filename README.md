@@ -144,6 +144,7 @@ print(global_ns.external_data.key2)
 | `:h <command name>` | displays help for that command or function | 
 | :option | displays all options available |
 | :h vim. | This is a neovim global table   | 
+| :InspectTree | Shows the AST for the languge opened in the buffer |
 
 ## *Vim - Neovim Mapping*
 |vim cmd | vim option | Nvim| Description |
