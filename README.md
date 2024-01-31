@@ -175,6 +175,7 @@ Here are the list of packages that is being used to get you started.
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
 |*gitblame.lua*| Git Blame | Package | Shows Git changes & owner |
+|markdown.lua| Markdown  | Package | Show Markdown preview |
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 |*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI |
 |completions|mason-tool-installer | LSP | Helps installing 3rd party tools |
