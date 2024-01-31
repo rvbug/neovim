@@ -1,0 +1,36 @@
+@document.meta
+Title : Neorg Help Doc
+Description: List of functionality available
+Author : rvbug
+Categories : docs
+created : 2024-01-10
+
+@end
+
+Neorg Notes
+
+* Welcome Note
+** Second Level
+*** third level
+
+* Tasks
+  - (=) Task 1 (use cntrl-space)
+  - (x) Task 2
+  -- (x) task22]
+
+  /notes1
+
+
+* Commands
+** Workspace
+   :Neorg workspace 
+   za -> toggle folds 
+  
+
+@code rust
+println!("hello from rust");
+@end
+
+@math
+   f(x) = y
+@end

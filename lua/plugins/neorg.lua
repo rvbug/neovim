@@ -14,6 +14,7 @@ return {
                 notes = "$HOME/neorg/notes",
               },
               default_workspace = "notes",
+              index = "index.norg"
             },
           },
         },
