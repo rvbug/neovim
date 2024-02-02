@@ -1,4 +1,11 @@
 
+
+<p align="center"> <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png"> </p>
+
+<p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
+
+
+
 # Introduction
 A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
 This repo helps you get started with using Neovim, giving you practical tips and provide necessary instructions to customise your IDE way you want it.
