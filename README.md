@@ -330,5 +330,6 @@ multiplexer which helps you create multiple terminals at once.
 
 ---
 # Future
-* DAP Setup 
+* DAP Setup
+* Vim Pencil
 
