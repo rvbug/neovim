@@ -176,14 +176,16 @@ Here are the list of packages that is being used to get you started.
 |*lualine.lua*| lualine.nvim | Package | Status line theme and configuration |
 |*autopairs.lua*| autopairs | Package | Autocompletion of brackets  |
 |*gitsigns.lua*| git-signs | Package | Git integration for buffers  |
+|*gitblame.lua*| Git Blame | Package | Shows Git changes & owner |
 |*comments.lua*| comments | Package | smart block commenting |
 |*floating-help.lua*| |Package | Floaing help |
 |*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
 |*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
-|*gitblame.lua*| Git Blame | Package | Shows Git changes & owner |
 |*markdown.lua*| Markdown  | Package | Show Markdown preview |
+|*quarto.lua*| Quarto | Package | Support for Quarto files |
+|*iron.lua* | Iron | Package | Interactive REPL on neovim | 
 |*db.lua*| vim-dadbod | DB | Plugin to interact with the DB|
 |*db.lua*| vim-dadbod-ui| DB UI | UI plugin for DB |
 |*db.lua*| vim-dadbod-completion | DB | Completion engine for DB |
