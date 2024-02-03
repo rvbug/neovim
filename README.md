@@ -323,6 +323,20 @@ To setup neovim for python and datascience, here are some of the steps to be fol
 - In your virtual env , install *neovim* & *debugpy* along with other datascience/ML libraries  
 - Ensure you install *pyright* python LSP in your *`lspconfig.lua`* file  
 
+# Markdown & Quarto 
+Neovim has extension to edit .md and .qmd files. For this to run following should be installed on your machine along with [iron.nvim](https://github.com/Vigemus/iron.nvim).  
+First you need to enable virtual env if you are working on any Data Science or ML project. Here's my [Cookie-ml](https://github.com/rvbug/cookie-ml) setup.
+After you have enabled you need to install the following libraries
+* *`pip3 install Ipython`*
+* *`pip3 install quarto`*
+
+| keystroke | action | 
+| --- | --- | 
+| `<leader>` | start repl | 
+| `<leader>sc` | visual_send | 
+| `<leader>sf` | send_file | 
+| `<leader>sl` | send_line | 
+| `<leader>sq` | exit | 
 
 
 
