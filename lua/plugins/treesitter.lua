@@ -11,6 +11,7 @@ return {
           "javascript",
           "rust",
           "python",
+          "bash",
           "html",
           "css",
           "vimdoc",
