@@ -35,8 +35,8 @@ return {
 				-- remove_mark = "<leader>md",
 				-- cr = "<leader>s<cr>",
 				-- interrupt = "<leader>s<leader>",
-			  -- exit = "<leader>sq",
-				clear = "<leader>ic",
+			   exit = "<leader>iq",
+				-- clear = "<leader>ic",
 			},
 			-- If the highlight is on, you can change how it looks
 			-- For the available options, check nvim_set_hl
