@@ -5,12 +5,11 @@
 <p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
 
 
-
 # Introduction
 A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
 This repo helps you get started with using Neovim, giving you practical tips and provide necessary instructions to customise your IDE way you want it.
 
-I have tried configuring Neovim using Package Managers like with Packer & Vim Plug but have found Lazy to be more structured. 
+I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
 Here's the snapshot of my configuration in action.
 
@@ -67,17 +66,20 @@ This is how the folder structure looks like. All the folders should be under `$H
 ![image](https://github.com/rvbug/nvim/assets/10928536/9dc8e3a4-4ab7-4ff6-b34c-63c5ecbbfc02)
 
 #### `init.lua` 
-This is where nvim looks everytime it starts.  <br>
+This is where nvim looks at everytime it starts so the lazy plugin manager is configured here.  <br>
+
+#### `lazy-lock.json`
+This lock file helps you to configure neovim and the version quickly.
 
 ####  `lua/plugins/`
 
-The best way to keep everything modularize is to split plugings into their own separate files and add it under this directory. Lazy will automatically detect any changes on this folder and loads it.  
+The best way to keep everything modularize is to split plugings into their own separate files and add it under this plugins directory. 
+Lazy will automatically detect any changes on this folder and loads it.  
 
-Plugin file should always return a table. Additional configuration/settings for that plugins should be inside a callback function. 
-
+Any/All plugin file should always return a table. Additional configuration/settings for that plugins should be inside a callback function. 
 See the sample setup for `lua/plugins/themes.lua`. Same approach is used for most of the plugins unless specified differently in their documentation. 
 
-`config = function() ` is a call back function.
+`config = function() ` is a call back function. Look at the themes.lua file where the plugin is called and then colorscheme is setup.
 
 ```lua
 return {
@@ -93,52 +95,49 @@ return {
 ---
 
 # Notes
+This section will help you understand the structure of the neovim config. 
 
 *`Language Server Protocol`* - LSP Config is the most challenging part of the configration. It uses open json rpc standard to communicate with IDE.   
 *`Autocompletion engine`* - Uses 3rd party sources for completion, snippets, suggestions etc.  
 
 ## *Lua Table*
-Lua is a very simple scripting language. It has one important data structure called table. Knowing how it works helps understand the structure of neovim packages. Knowledge of table will help you understand the section *"Vim - NeoVim Mapping"* below.
+Lua is a very simple scripting language. It has one important data structure called table. Knowing how it works helps understand the structure of neovim packages and setup. 
 
-Look at the tree structure below. You will see `global_ns` as a table with a global namespace.
+Look at the tree structure below. You will see `ns` as a table with a global namespace.
 It contains `config`, `functions` as sub table.  "Language" is an option under global_ns.config table
 
 ![image](https://github.com/rvbug/neovim/assets/10928536/c229c4be-0fc5-4cd2-be4b-5b1c71b57eb8)
 
 ```lua
 
--- to understand how lua tables are used, what is vim.opt, vim.bo etc
-
-
-
-global_ns = {}
+ns = {}
 
 --sub tables
-global_ns.config = {
+ns.config = {
     language = "Lua",
 }
 
-global_ns.functions = {
+ns.functions = {
    square = function(x) return x * x end
 }
 
-global_ns.message = "this is global variable"
+ns.message = "this is global variable"
 
 -- dictionary
-global_ns.external_data = {
+ns.external_data = {
    key_one = "value_one",
    key_two = 123
 } 
 
-global_ns.coroutine = coroutine.create(function()
+ns.coroutine = coroutine.create(function()
    ...
 end)
 
 -- Example usage:
-print(global_ns.config.language)  
-print(global_ns.functions.square(5))  
-print(global_ns.message)  
-print(global_ns.external_data.key2) 
+print(ns.config.language)  
+print(ns.functions.square(5))  
+print(ns.message)  
+print(ns.external_data.key2) 
 
 
 ```
@@ -202,8 +201,6 @@ Here are the list of packages that is being used to get you started.
 
 ---
 
----
-
 # Basic Editor Configuration 
 This is the basic configuration I use in **`keymaps.lua`**. 
 
@@ -239,9 +236,7 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 | `<leader>tx`|`:tabclose<cr>` | close the current tab |
 | `<leader>tn`| `:tn<cr>`| move to the next tab |
 | `<leader>tp`|`:tp<cr>` | go to previous tab |
-|`<leader>su` | `:lua vim.lsp.buf.hover()<cr>`| lsp completion (will be replaced soon) | 
 |`<leader>tt` | `:ToggleTerm<cr>`| toggle terminal | 
-
 
 ---
 
@@ -332,17 +327,26 @@ After you have enabled you need to install the following libraries
 
 | keystroke | action | 
 | --- | --- | 
-| `<leader>` | start repl | 
 | `<leader>sc` | visual_send | 
-| `<leader>sf` | send_file | 
-| `<leader>sl` | send_line | 
-| `<leader>sq` | exit | 
+| `<leader>if` | send_file | 
+| `<leader>il` | send_line | 
+| `<leader>iq` | exit | 
+| `<leader>ii` | start repl | 
+| `<leader>ir` | iron restart | 
+| `<leader>ii` | iron focus | 
+| `<leader>ih` | iron hide | 
+
 
 
 
 # Tmux
 Tmux is a terminal
 multiplexer which helps you create multiple terminals at once.
+| keystroke | action | 
+| --- | --- | 
+| c-b | Leader key |
+| c-b<c> | create a new tab |
+
 
 ---
 # Future
