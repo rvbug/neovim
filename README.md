@@ -56,14 +56,13 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 | rust | *`brew install rust`*| Rust compilers and toolchain|
 | yarn | *`brew install yarn`* | For Markdown preview |
 
-
 ---
 
 # Folder Structure
 
 This is how the folder structure looks like. All the folders should be under `$HOME/.config/nvim` 
 
-<img src="https://github.com/rvbug/neovim/assets/10928536/01503db1-418b-422c-b8d1-c363e3bd61c0" height=500 width="500" />
+<p align="center"> <img src="https://github.com/rvbug/neovim/assets/10928536/01503db1-418b-422c-b8d1-c363e3bd61c0" height=500 width="500" /> </p>
 
 #### `init.lua` 
 This is where nvim looks at everytime it starts so the lazy plugin manager is configured here.  <br>
