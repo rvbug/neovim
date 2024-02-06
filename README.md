@@ -14,9 +14,10 @@ I have tried configuring Neovim using Package Managers like with Packer & Vim Pl
 
 # Configuration
 
-Here's the snapshot of my configuration in action.
+Here's the snapshot of my configuration.
 
-https://github.com/rvbug/neovim/assets/10928536/e11bf03c-d9bd-40ee-94d9-8dab7a195816
+
+https://github.com/rvbug/neovim/assets/10928536/a9a724ab-b3c4-4db2-b080-87432d279daf
 
 
 
