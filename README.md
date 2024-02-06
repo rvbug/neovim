@@ -357,4 +357,14 @@ multiplexer which helps you create multiple terminals at once.
 # Future
 * DAP Setup
 * Vim Pencil
+* .Dotfiles
 
+---
+# References
+[Neovim](https://neovim.io/)
+[Vim](https://www.vim.org/)
+[Lua](https://www.lua.org/)
+[Neovim Learning Path](https://www.sherpa.guide/paths/neovim)
+[Tmux](https://github.com/tmux/tmux/wiki)
+[Wezterm](https://wezfurlong.org/wezterm/index.html)
+[Neorg](https://github.com/nvim-neorg/neorg)
