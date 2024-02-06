@@ -53,6 +53,7 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 
 | tools | command | description |  
 | --- | --- | ---|
+| wezterm | *`brew install wezterm`* | Excellent terminal written in rust and supports configuration in lua |
 | fd |*`brew install fd`* | Alternative to find command |
 | ripgrep |*`brew install ripgrep`* | Real time grep |
 | lazygit | *`brew install lazygit`* | amazing UI for git |
