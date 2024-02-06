@@ -26,7 +26,7 @@ return {
 			keymaps = {
 				send_motion = "<leader>ic",
 				-- visual_send = "<leader>sc",
-				send_file = "<leader>if",
+				send_file = "<leader>is",
 				send_line = "<leader>il",
 				-- send_until_cursor = "<leader>su",
 				-- send_mark = "<leader>sm",
