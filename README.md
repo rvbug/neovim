@@ -68,7 +68,7 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 # Folder Structure
 This is how the folder structure looks like. All the folders should be under `$HOME/.config/nvim` 
 
-<p align="center"> <img src="https://github.com/rvbug/neovim/assets/10928536/fa380321-65a4-4111-a109-8360df8edb06" height=600 width=600 /> </p>
+<p align="center"> <img src="https://github.com/rvbug/neovim/assets/10928536/fa380321-65a4-4111-a109-8360df8edb06" height=700 width=700 /> </p>
 
 #### `init.lua` 
 This is where nvim looks at everytime it starts so the lazy plugin manager is configured here.  <br>
