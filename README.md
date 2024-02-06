@@ -11,9 +11,15 @@ This repo helps you get started with using Neovim, giving you practical tips and
 
 I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
+
+# Configuration
+
 Here's the snapshot of my configuration in action.
 
-< My Neovim IDE - Screenshot/Video goes here - Using Screecast>
+https://github.com/rvbug/neovim/assets/10928536/e11bf03c-d9bd-40ee-94d9-8dab7a195816
+
+
+
 
 ### Note
 * This is going to be challenging .. but what's the fun if it's easy  
