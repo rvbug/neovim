@@ -68,7 +68,7 @@ return {
 			vim.keymap.set("n", "<leader>lD", "<cmd>lua vim.lsp.buf.declaration()<CR>")
 			vim.keymap.set("n", "<leader>li", "<cmd>lua vim.lsp.buf.implementation()<CR>")
 			vim.keymap.set("n", "<leader>lt", "<cmd>lua vim.lsp.buf.type_definition()<CR>")
-			vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.references()<CR>")
+			vim.keymap.set("n", "<leader>lb", "<cmd>lua vim.lsp.buf.references()<CR>")
 			vim.keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
 			vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>")
 			-- vim.keymap.set("n", "<leader>gf", "<cmd>lua vim.lsp.buf.format({async = true})<CR>")
