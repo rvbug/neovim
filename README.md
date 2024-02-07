@@ -11,6 +11,7 @@ This repo helps you get started with using Neovim, giving you practical tips and
 
 I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
+This setup supports Python (including ML) , Rust Development, Writing blogs & Research papers.
 
 # Configuration
 
@@ -355,10 +356,12 @@ multiplexer which helps you create multiple terminals at once.
 
 
 ---
-# Future
+# Future Plans  
 * DAP Setup
 * Vim Pencil
 * .Dotfiles
+* Web Development
+* Bibliography
 
 ---
 # References
