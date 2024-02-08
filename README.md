@@ -385,13 +385,6 @@ end
 | `<leader>dt` | dap.toggle_breakpoint |
 | `<leader>dc`| dap.continue |
 
-I am still working to get debugger to run for Rust .
-
-
-| command | description 
-| --- | --- | 
-| | | 
-
 
 ---
 # Future Plans  
