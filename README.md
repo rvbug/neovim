@@ -11,12 +11,14 @@ This repo helps you get started with using Neovim, giving you practical tips and
 
 I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
+This setup supports Python (including ML) , Rust Development, Writing blogs & Research papers.
 
 # Configuration
 
-Here's the snapshot of my configuration in action.
+Here's the snapshot of my configuration.
 
-https://github.com/rvbug/neovim/assets/10928536/e11bf03c-d9bd-40ee-94d9-8dab7a195816
+
+https://github.com/rvbug/neovim/assets/10928536/a9a724ab-b3c4-4db2-b080-87432d279daf
 
 
 
@@ -354,7 +356,19 @@ multiplexer which helps you create multiple terminals at once.
 
 
 ---
-# Future
+# Future Plans  
 * DAP Setup
 * Vim Pencil
+* .Dotfiles
+* Web Development
+* Bibliography
 
+---
+# References
+[Neovim](https://neovim.io/)  
+[Vim](https://www.vim.org/)  
+[Lua](https://www.lua.org/)  
+[Neovim Learning Path](https://www.sherpa.guide/paths/neovim)  
+[Tmux](https://github.com/tmux/tmux/wiki)  
+[Wezterm](https://wezfurlong.org/wezterm/index.html)  
+[Neorg](https://github.com/nvim-neorg/neorg)  
