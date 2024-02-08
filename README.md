@@ -18,8 +18,7 @@ This setup supports Python (including ML) , Rust Development, Writing blogs & Re
 Here's the snapshot of my configuration.
 
 
-https://github.com/rvbug/neovim/assets/10928536/a9a724ab-b3c4-4db2-b080-87432d279daf
-
+https://github.com/rvbug/neovim/assets/10928536/dd640ac9-a4f4-4c9c-a50a-7c9489747cc9
 
 
 
