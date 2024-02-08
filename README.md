@@ -204,6 +204,7 @@ Here are the list of packages that is being used to get you started.
 |completions| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
 |completions| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
 |completions| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+|*debug.lua| Debugging | DAP | Helps you to support programming language like python (for now) | 
 
 
 ---
@@ -355,9 +356,46 @@ multiplexer which helps you create multiple terminals at once.
 | c-b<c> | create a new tab |
 
 
+# Debug Adapter Protocol (DAP)
+Typically all IDEs support debugger to find and fix errors in your programs. DAP helps to abstract the way how IDE communicates with the debuger.
+This has been most challenging to set it up.
+
+Every programming language needs an debugging adapter. For python you need to use `debugpy` adapter. Here's how it should be installed. 
+
+```lua
+mkdir .virtualenvs
+cd .virtualenvs
+python -m venv debugpy
+debugpy/bin/python -m pip install debugpy
+```
+
+```lua
+dappython.setup("~/.virtualenvs/debugpy/bin/python3")
+
+-- add following lines if you use python3 instead of python
+dappython.resolve_python = function()
+   return "/usr/bin/python3"
+end
+```
+
+`Note`:  If you are working on data science or ML project, do not activate your virtual environment before opening Neovim. It does not work.
+
+| keystroke | action | 
+| --- | --- | 
+| `<leader>dt` | dap.toggle_breakpoint |
+| `<leader>dc`| dap.continue |
+
+I am still working to get debugger to run for Rust .
+
+
+| command | description 
+| --- | --- | 
+| | | 
+
+
 ---
 # Future Plans  
-* DAP Setup
+* DAP Setup for Rust & JS
 * Vim Pencil
 * .Dotfiles
 * Web Development
@@ -372,3 +410,5 @@ multiplexer which helps you create multiple terminals at once.
 [Tmux](https://github.com/tmux/tmux/wiki)  
 [Wezterm](https://wezfurlong.org/wezterm/index.html)  
 [Neorg](https://github.com/nvim-neorg/neorg)  
+[What is DAP](https://microsoft.github.io/debug-adapter-protocol/)
+[DAP Adapter Installation Instructions](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)
