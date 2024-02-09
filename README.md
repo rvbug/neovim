@@ -16,7 +16,8 @@ This setup now supports the following :
 * **`Python (Data Science & ML)`**
 * **`Rust`**  
 * **`Lua`**   
-* **`OCaml`**    
+* **`OCaml`**  
+* **`Bash Scripting`**   
 * **`Web Development`**    
 * **`Notes, Blogs & Journaling`**      
 
