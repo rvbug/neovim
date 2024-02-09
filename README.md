@@ -11,12 +11,14 @@ This repo helps you get started with using Neovim, giving you practical tips and
 
 I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
-This setup now supports the following  
-* **`Web Development`**  
-* **`OCaml1`**  
-* **`Python (Data Science & ML)`**    
-* **`Writing blogs`**    
-* **`Notes and journaling`**    
+This setup now supports the following :
+
+* **`Python (Data Science & ML)`**
+* **`Rust`**  
+* **`Lua`**   
+* **`OCaml`**    
+* **`Web Development`**    
+* **`Notes, Blogs & Journaling`**      
 
 # Configuration
 
