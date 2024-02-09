@@ -369,11 +369,11 @@ This has been most challenging to set it up.
 
 Every programming language needs an debugging adapter. For python you need to use `debugpy` adapter. Here's how it should be installed. 
 
-```lua
-mkdir .virtualenvs
-cd .virtualenvs
-python -m venv debugpy
-debugpy/bin/python -m pip install debugpy
+```bash
+> mkdir .virtualenvs
+> cd .virtualenvs
+> python -m venv debugpy
+> debugpy/bin/python -m pip install debugpy
 ```
 
 ```lua
