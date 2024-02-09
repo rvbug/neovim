@@ -18,7 +18,7 @@ This setup now supports the following :
 * **`Lua`**   
 * **`OCaml`**  
 * **`Bash Scripting`**   
-* **`Web Development`**    
+* **`HTML, CSS & JS`**    
 * **`Notes, Blogs & Journaling`**      
 
 # Configuration
