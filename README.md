@@ -11,7 +11,12 @@ This repo helps you get started with using Neovim, giving you practical tips and
 
 I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
 
-This setup supports Python (Data Science & ML) Writing blogs &  taking notes and writing journals.
+This setup now supports the following  
+* **`Web Development`**  
+* **`OCaml1`**  
+* **`Python (Data Science & ML)`**    
+* **`Writing blogs`**    
+* **`Notes and journaling`**    
 
 # Configuration
 
@@ -390,8 +395,7 @@ end
 * DAP Setup for Rust & JS
 * Vim Pencil
 * .Dotfiles
-* Web Development
-* Bibliography
+
 
 ---
 # References
@@ -402,5 +406,5 @@ end
 [Tmux](https://github.com/tmux/tmux/wiki)  
 [Wezterm](https://wezfurlong.org/wezterm/index.html)  
 [Neorg](https://github.com/nvim-neorg/neorg)  
-[What is DAP](https://microsoft.github.io/debug-adapter-protocol/)
+[What is DAP](https://microsoft.github.io/debug-adapter-protocol/)  
 [DAP Adapter Installation Instructions](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)
