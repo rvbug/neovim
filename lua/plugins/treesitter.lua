@@ -21,6 +21,8 @@ return {
           "bash",
           "markdown_inline",
           "sql",
+          "vimdoc",
+          "jsdoc",
         },
         highlight = { enable = true },
         indent = { enable = true },

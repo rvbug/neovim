@@ -12,7 +12,17 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				-- ensure certain lsps are installed
-				ensure_installed = { "lua_ls", "tsserver", "rust_analyzer", "bashls", "pyright", "yamlls" },
+				ensure_installed = {
+					"lua_ls",
+					"tsserver",
+					"rust_analyzer",
+					"bashls",
+					"pyright",
+					"yamlls",
+					"ocamllsp",
+					"html",
+					"cssls",
+				},
 			})
 		end,
 	},
@@ -52,6 +62,19 @@ return {
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 			})
+
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.ocamllsp.setup({})
+
+			lspconfig.pyright.setup({})
+
 
 			handlers = {
 				-- Add borders to LSP popups
