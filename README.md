@@ -4,16 +4,19 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
 
-# History
-Here's little history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely by many programmers across the world.
-VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light weight, simple language called Lua.
-<p align="Center"> <img height="600" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
-
 
 # Introduction
 
 Neovim is fork of VI/VIM. It is brilliant, blazingly fast, highly configurable modal editor released in 2014.
 This repo helps you get started with using Neovim, giving you practical tips and providing necessary instructions to customise your IDE the way you want it.
+
+
+# History
+Here's the history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely.
+VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light weight, simple language called Lua.
+<p align="Center"> <img height="600" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
+
+
 
 
 # Advantages
