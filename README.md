@@ -417,7 +417,7 @@ end
 * DAP Setup for Rust & JS
 * Vim Pencil
 * .Dotfiles
-
+* Add my neovim notes to this repo
 
 ---
 # References
