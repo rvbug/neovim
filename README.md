@@ -6,28 +6,30 @@
 
 # History
 Here's little history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely by many programmers across the world.
-<p align="left"> <img height="700" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
+VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light weight, simple language called Lua.
+<p align="Center"> <img height="600" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
 
 
 # Introduction
 
 Neovim is fork of VI/VIM. It is brilliant, blazingly fast, highly configurable modal editor released in 2014.
-This repo helps you get started with using Neovim, giving you practical tips and providing necessary instructions to customise your IDE way you want it.
+This repo helps you get started with using Neovim, giving you practical tips and providing necessary instructions to customise your IDE the way you want it.
 
 
 # Advantages
-There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages :-
+There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages of using modal editors like Vim/Neovim:-
 
-- Fater Navigation and eliminates the need of a mouse
-- Significantly helps your editing speed
-- It has macros to automate repetitive tasks
-- Helps you to configure neovim to your specific needs and preferences and stremline your developement/writing workflow
-- You can have custom keybindings to your frequently used commands
-- Helps to enhance your productiviy by providing features like split windows, quick search & replace and distraction-free mode
+- Fater Navigation by eliminating the need of a mouse
+- Significantly improves your editing speed
+- Macros to automate repetitive tasks
+- Configure neovim to your specific needs and preferences and stremline your developement/writing workflow
+- You can have custom keybindings mapped to your frequently used commands
+- Eenhance your productiviy by providing features like split windows, quick search & replace and distraction-free mode too
 
 
+# My Setup
 
-This setup now supports the following :
+This setup supports the following :
 
 * **`Python (Data Science & ML)`**
 * **`Rust`**  
@@ -57,7 +59,7 @@ https://github.com/rvbug/neovim/assets/10928536/dd640ac9-a4f4-4c9c-a50a-7c948974
 Before you go down this path, there are few things to keep in mind :
 
 
-1. Understand Vi/Vim motion, objects
+1. Understand Vi/Vim history, what are motions, objects etc
 2. Learn Lua - A lightweight scripting language
 3. Get basic understanding of VimScript and Lua structure 
 4. Understand relationship between Vim & NeoVim 
