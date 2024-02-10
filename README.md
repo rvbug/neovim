@@ -4,12 +4,28 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
 
+# History
+Here's little history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely by many programmers across the world.
+<p align="left"> <img height="700" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
+
 
 # Introduction
-A fork of VIM, Neovim is brilliant, blazingly fast, highly configurable modal editor.
-This repo helps you get started with using Neovim, giving you practical tips and provide necessary instructions to customise your IDE way you want it.
 
-I have tried configuring Neovim using Package Managers like with Packer & Vim Plug beofe but have recently migrated to Lazy which seems to be more structured. 
+Neovim is fork of VI/VIM. It is brilliant, blazingly fast, highly configurable modal editor released in 2014.
+This repo helps you get started with using Neovim, giving you practical tips and providing necessary instructions to customise your IDE way you want it.
+
+
+# Advantages
+There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages :-
+
+- Fater Navigation and eliminates the need of a mouse
+- Significantly helps your editing speed
+- It has macros to automate repetitive tasks
+- Helps you to configure neovim to your specific needs and preferences and stremline your developement/writing workflow
+- You can have custom keybindings to your frequently used commands
+- Helps to enhance your productiviy by providing features like split windows, quick search & replace and distraction-free mode
+
+
 
 This setup now supports the following :
 
@@ -32,7 +48,8 @@ https://github.com/rvbug/neovim/assets/10928536/dd640ac9-a4f4-4c9c-a50a-7c948974
 
 ### Note
 * This is going to be challenging .. but what's the fun if it's easy  
-* You need to have lot of patience.. so take small steps  
+* You need to have lot of patience.. so take small steps
+* It has a steep learning curve but worth it!!
 * Give yourself enough time to learn as Vi/Vim has a steep learning curve   
 * Finally, read..read...read lots of documentation  
 
