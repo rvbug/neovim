@@ -22,14 +22,14 @@ VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light 
 
 
 # Advantages
-There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages of using these modal editors:-
+There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Some of the advantages are:-
 
-- Fater Navigation by eliminating the need of a mouse
+- Faster Navigation by eliminating the need of a mouse
 - Significantly improves your editing speed
 - Macros to automate repetitive tasks
-- Configure neovim to your specific needs and preferences and stremline your developement/writing workflow
+- Configure to your specific needs and preferences and stremline your workflow
 - You can have custom keybindings mapped to your frequently used commands
-- Eenhance your productiviy by providing features like split windows, quick search & replace and distraction-free mode too
+- Enhance your productivity by providing features like split windows, quick search & replace and distraction-free mode too
 
 
 # My Setup
@@ -56,15 +56,14 @@ https://github.com/rvbug/neovim/assets/10928536/dd640ac9-a4f4-4c9c-a50a-7c948974
 ### Note
 * This is going to be challenging .. but what's the fun if it's easy  
 * You need to have lot of patience.. so take small steps
-* It has a steep learning curve but worth it!!
-* Give yourself enough time to learn as Vi/Vim has a steep learning curve   
+* Give yourself enough time to learn as it has a steep learning curve  
 * Finally, read..read...read lots of documentation  
 
 # Learning Path
 Before you go down this path, there are few things to keep in mind :
 
 
-1. Understand Vi/Vim history, what are motions, objects etc
+1. Understand Vi/Vim history, motions and objects
 2. Learn Lua - A lightweight scripting language
 3. Get basic understanding of VimScript and Lua structure 
 4. Understand relationship between Vim & NeoVim 
@@ -409,7 +408,7 @@ dappython.resolve_python = function()
 end
 ```
 
-`Note`:  If you are working on data science or ML project, do not activate your virtual environment before opening Neovim. It does not work.
+`Note`:  If you are working on data science or ML projects, do not activate your virtual environment before using DAP
 
 | keystroke | action | 
 | --- | --- | 
