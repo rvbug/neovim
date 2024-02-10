@@ -10,6 +10,8 @@
 Neovim is fork of VI/VIM. It is brilliant, blazingly fast, highly configurable modal editor released in 2014.
 This repo helps you get started with using Neovim, giving you practical tips and providing necessary instructions to customise your IDE the way you want it.
 
+*`Note: Vim/Neovim are called modal editors because their behavior changes depending on the working mode (Normal mode, Command mode, Visual mode, Visual Block mode etc)`*
+
 
 # History
 Here's the history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely.
@@ -20,7 +22,7 @@ VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light 
 
 
 # Advantages
-There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages of using modal editors like Vim/Neovim:-
+There are many IDEs like VSCode, Pycharm which just works out of the box then why Neovim? Here are some of the advantages of using these modal editors:-
 
 - Fater Navigation by eliminating the need of a mouse
 - Significantly improves your editing speed
