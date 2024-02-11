@@ -16,9 +16,7 @@ This repo helps you get started with using Neovim, giving you practical tips and
 # History
 Here's the history of editors for the last 50 years. If you look at VI/VIM, it was release more than 4 decades ago and still used widely.
 VIM uses "VimL" or VimScript as scripting language where as Neovim uses a light weight, simple language called Lua.
-<p align="Center"> <img height="600" width="400" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
-
-
+<p align="Center"> <img height="600" width="300" src="https://github.com/rvbug/neovim/assets/10928536/782c4a8e-5def-451c-8884-a53c5a47ad18"> </p>
 
 
 # Advantages
@@ -44,14 +42,12 @@ This setup supports the following :
 * **`HTML, CSS & JS`**    
 * **`Notes, Blogs & Journaling`**      
 
+
 # Configuration
 
 Here's the snapshot of my configuration.
 
-
 https://github.com/rvbug/neovim/assets/10928536/dd640ac9-a4f4-4c9c-a50a-7c9489747cc9
-
-
 
 ### Note
 * This is going to be challenging .. but what's the fun if it's easy  
@@ -69,8 +65,9 @@ Before you go down this path, there are few things to keep in mind :
 4. Understand relationship between Vim & NeoVim 
 
 ---
+# Installation
 
-# Neovim Installation
+## Neovim Installation
 
 | os | command | config file location|  
 | --- | --- | ---|
@@ -80,8 +77,9 @@ Before you go down this path, there are few things to keep in mind :
 
 ---
 
-# Other Prerequisities
-Some additional installations are required on your machine. LSP & DAP servers, linter and formatter can all be installed using `Mason` neovim plugin :
+## Other Prerequisities
+Some additional installations are required on your machine. LSP & DAP servers, linter and formatter can all be installed using `Mason` plugin.
+You can use `pacman` or `apt-get` if you are on other linux distributions.
 
 | tools | command | description |  
 | --- | --- | ---|
@@ -95,6 +93,33 @@ Some additional installations are required on your machine. LSP & DAP servers, l
 | rust | *`brew install rust`*| Rust compilers and toolchain|
 | yarn | *`brew install yarn`* | For Markdown preview |
 
+
+## Setup
+To setup your IDE there are couple of ways. You either clone this repo or start configuring from scratch. 
+
+### Cloning Repo
+You need to clone this repo on your ~/.config directory. If this folder does not exist, create one.
+
+```bash
+> cd ~/.config
+> git clone https://github.com/rvbug/neovim.git
+> nvim
+```
+
+Once you open up neovim, lazy package manager will take over and start the entire installation process
+
+If you already have your own personal neovim config, I would strongly suggest to do the following
+
+```bash
+# take backup of your existing config
+> mv ~/.config/nvim  ~/.config/nvim_backup
+
+# you need to delete the folders as it might interfere with your setup
+
+>  cd ~/.local/share
+> rm -rf nvim
+
+```
 ---
 
 # Folder Structure
