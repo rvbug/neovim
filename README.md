@@ -464,3 +464,4 @@ end
 [Learn Vim the smart way](https://learnvim.irian.to/)  
 [Vim Galore](https://github.com/mhinz/vim-galore)  
 [Comprehensive Vim Guide](https://thevaluable.dev/vim-commands-beginner/)  
+[Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
