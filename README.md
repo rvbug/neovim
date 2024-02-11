@@ -1,5 +1,3 @@
-
-
 <p align="center"> <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png"> </p>
 
 <p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
@@ -281,11 +279,8 @@ This is the basic configuration I use in **`keymaps.lua`**.
 | `:checkhealth` | check the status of your neovim, LSP, linters etc| 
 
 
-
-
 # Keymaps
 The keyboard shortcut for specific commands used in **`keymaps.lua`**. 
-> *I am planning to switch to tmux shortly for window and tile*
 
 | Command | Mapped to | Description |
 | --- | ---| --- |
@@ -300,6 +295,13 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 | `<leader>tn`| `:tn<cr>`| move to the next tab |
 | `<leader>tp`|`:tp<cr>` | go to previous tab |
 |`<leader>tt` | `:ToggleTerm<cr>`| toggle terminal | 
+
+
+# Wezterm
+| Command | Mapped to | Description |
+| --- | ---| --- |
+| `cntrl + shift + b`| Full Screen | Toggle full screen mode  |
+
 
 ---
 
@@ -444,9 +446,8 @@ end
 ---
 # Future Plans  
 * DAP Setup for Rust & JS
-* Vim Pencil
 * .Dotfiles
-* Add my neovim notes to this repo
+* Add my neovim notes & references to this repo
 
 ---
 # References
