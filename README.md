@@ -464,13 +464,20 @@ end
 | `<leader>dt` | dap.toggle_breakpoint |
 | `<leader>dc`| dap.continue |
 
+# AI Coding Assistant
+This configuration now supports two coding free version of coding assistant. This is still in the experiemental stage and I am still exploring multiple options.
+
+| Package | Description | 
+| --- | --- | 
+| Codeium | Extension but requires sign-up and Internet access|
+| TabbyML| Locally hosted and supports docker too |
+
 
 ---
 # Future Plans  
-* DAP Setup for Rust & JS
-* .Dotfiles
-* Add my neovim notes & references to this repo
-
+* DAP support for Rust & JS
+* .Dotfile support
+* Advance configuration & Docker support for TabbyML
 ---
 # References
 [Neovim](https://neovim.io/)  
