@@ -250,14 +250,15 @@ Here are the list of packages that is being used to get you started.
 |*db.lua*| vim-dadbod-completion | DB | Completion engine for DB |
 |*completions.lua*| cmp-path <br> cmp-cmdline|Package| helps in autocomplete <tab> on commandline|
 |*lspconfig.lua*| Mason| LSP Plugin |Allows to manage external tools like LSP & DAP servers, linters & formatters through its UI |
-|completions|mason-tool-installer | LSP | Helps installing 3rd party tools |
+|*completions.lua*|mason-tool-installer | LSP | Helps installing 3rd party tools |
 |*completions.lua*| nvim-cmp | LSP | A snippet engine which is used as a source and also for snippet "expansion" for nvim-cmp|
 |*completions.lua*| luasnip | LSP  | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
 |*completions.lua*| cmp.luasnip | LSP | used as a luasnip completion source for nvim-cmp, it supplies info to nvim-cmp to display and luasnip will expand it|
-|completions| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
-|completions| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
-|completions| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
-|*debug.lua| Debugging | DAP | Helps you to support programming language like python (for now) | 
+|*completions.lua*| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
+|*completions.lua*| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
+|*completions.lua*| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
+|*debug.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
+|*ai-assist.lua*| Coding Assistant | AI | Using TabbyML/Codeium AI as your coding assistant. `Experiemental phase` |  
 
 
 ---
@@ -405,12 +406,33 @@ After you have enabled you need to install the following libraries
 
 
 # Tmux
-Tmux is a terminal
-multiplexer which helps you create multiple terminals at once.
+Tmux is a terminal multiplexer which helps you create multiple terminals at once. You can have sessions with each having multiple windows.
+Once you install tmux, create a file like so. All the configurations are stored in the config file.
+
+```sh
+   > cd $HOME
+   > touch .tmux.conf
+```
+
+Install tmux plugin manager to make tmux more powerful.   
+
+```sh
+   > git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Now once you install any plugin `<leaderkey> I` to install them.   
+My leader key is `c-b` so the command to install additional plugins is `c-b I`
+
+
+
+
 | keystroke | action | 
 | --- | --- | 
 | c-b | Leader key |
-| c-b<c> | create a new tab |
+| c-b<c> | create a new window |
+| c-b  I | Install additional plugins using TPM |
+
+
 
 
 # Debug Adapter Protocol (DAP)
