@@ -481,7 +481,21 @@ This configuration now supports two coding free version of coding assistant. Thi
  $> tabby --serve --device metal --model TabbyML/StartCoder-1B
 
 ```
+## Ocaml Setup
 
+```bash
+# install ocaml
+$> bash -c "sh <(curl -fsSL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"
+
+# initalize
+$> ocaml init
+
+# tool chain
+$> opam install ocaml-lsp-server odoc ocamlformat utop
+
+# finally run the following to update the current shell env
+$> eval $(opam env --switch=default)
+```
 
 ---
 # Future Plans  
