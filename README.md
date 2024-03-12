@@ -472,6 +472,16 @@ This configuration now supports two coding free version of coding assistant. Thi
 | Codeium | Extension but requires sign-up and Internet access|
 | TabbyML| Locally hosted and supports docker too |
 
+## TabbyML setup
+```bash
+ # install using brew or your preferred package manager
+ $> brew install tabbyml/tabby/tabby
+
+ # to run the server on your local machine
+ $> tabby --serve --device metal --model TabbyML/StartCoder-1B
+
+```
+
 
 ---
 # Future Plans  
