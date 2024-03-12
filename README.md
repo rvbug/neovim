@@ -82,6 +82,7 @@ You can use `pacman` or `apt-get` if you are on other linux distributions.
 | tools | command | description |  
 | --- | --- | ---|
 | wezterm | *`brew install wezterm`* | Excellent terminal written in rust and supports configuration in lua |
+| starship| *`brew install starship`* | customizable shell, simpler than ohmyzsh |
 | fd |*`brew install fd`* | Alternative to find command |
 | ripgrep |*`brew install ripgrep`* | Real time grep |
 | lazygit | *`brew install lazygit`* | amazing UI for git |
