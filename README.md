@@ -498,10 +498,12 @@ $> opam install ocaml-lsp-server odoc ocamlformat utop
 $> eval $(opam env --switch=default)
 ```
 
+# Dotfiles
+Have a look at the [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want to setup a new machine.
+
 ---
 # Future Plans  
 * DAP support for Rust & JS
-* .Dotfile support
 * Advance configuration & Docker support for TabbyML
 ---
 # References
