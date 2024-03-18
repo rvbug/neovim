@@ -499,7 +499,7 @@ $> eval $(opam env --switch=default)
 ```
 
 # Dotfiles
-Have a look at the [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want to setup a new machine.
+Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want to setup a new machine.
 
 ---
 # Future Plans  
