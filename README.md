@@ -464,6 +464,13 @@ end
 | --- | --- | 
 | `<leader>dt` | dap.toggle_breakpoint |
 | `<leader>dc`| dap.continue |
+| `<leader>1`| step over |
+| `<leader>2`| step into |
+| `<leader>3`| dapui widgets hover |
+| `<leader>4`| dap launch server on port 8086 |
+| `<leader>dr`| require"osv".run_this() |
+
+
 
 # AI Coding Assistant
 This configuration now supports two coding free version of coding assistant. This is still in the experiemental stage and I am still exploring multiple options.
@@ -503,7 +510,7 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 
 ---
 # Future Plans  
-* DAP support for Rust & JS
+* DAP support for Rust
 * Advance configuration & Docker support for TabbyML
 ---
 # References
