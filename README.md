@@ -258,7 +258,7 @@ Here are the list of packages that is being used to get you started.
 |*completions.lua*| friendly-snippets | LSP | Collection of snippets for all programming languages loaded by luasnip|
 |*completions.lua*| cmp-nvim-lsp | LSP | A completion source for nvim-cmp to display whatever lsp is attached to the buffer|
 |*completions.lua*| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
-|*debug.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
+|*dap.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
 |*ai-assist.lua*| Coding Assistant | AI | Using TabbyML/Codeium AI as your coding assistant. `Experiemental phase` |  
 
 
@@ -471,6 +471,23 @@ end
 | `<leader>dr`| require"osv".run_this() |
 
 
+## For python debugging
+Here are the steps for debugging python code
+
+- Open python file
+- Set breakpoints using `<leader>dt`
+- Start the debugger using `<leader>dc`
+
+## For Lua debugging
+Here are the steps for debugging lua code (incld. neovim) 
+
+- Open lua file and set breakpoints
+- start the server using `require"osv".launch({port=8086})`
+- run the debugger using `require"osv".run_this()` and you are good to go
+
+
+## For rust debugging
+TBD
 
 # AI Coding Assistant
 This configuration now supports two coding free version of coding assistant. This is still in the experiemental stage and I am still exploring multiple options.
