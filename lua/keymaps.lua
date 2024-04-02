@@ -69,4 +69,5 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- toggleterm shortcut
 keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
+keymap.set("n", "<leader>ut", ":UndotreeToggle<cr>")
 
