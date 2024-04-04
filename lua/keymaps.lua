@@ -70,6 +70,13 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- toggleterm shortcut
 keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
 keymap.set("n", "<leader>ut", ":UndotreeToggle<cr>")
+
+-- works for python scripts only
 keymap.set("n", "<leader>rc", ":RunCode<cr>")
 keymap.set("n", "<leader>rv", ":RunCodeVert<cr>")
+keymap.set("n", "<leader>rt", ":RunToCursor<cr>")
+keymap.set("n", "<leader>rs", ":RunSelectedCode<cr>")
+
+
+
 
