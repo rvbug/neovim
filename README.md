@@ -260,8 +260,8 @@ Here are the list of packages that is being used to get you started.
 |*completions.lua*| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
 |*dap.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
 |*undotree.lua* | Undo Tree | Package | Visualizes the undo history|
+|*trouble.lua* | Trouble | Package | List to show diagnostics, references & telescope results | 
 |*ai-assist.lua*| Coding Assistant | AI | Using TabbyML/Codeium AI as your coding assistant. `Experiemental phase` |  
-
 
 ---
 
