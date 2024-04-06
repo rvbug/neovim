@@ -530,6 +530,7 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 # Future Plans  
 * DAP support for Rust
 * Advance configuration & Docker support for TabbyML
+* Optimize for faster load time 
 ---
 # References
 [Neovim](https://neovim.io/)  
