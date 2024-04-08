@@ -548,3 +548,4 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 [Comprehensive Vim Guide](https://thevaluable.dev/vim-commands-beginner/)  
 [Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 [Vim Tutorials](https://vimschool.netlify.app/basics/vimmodes/)
+[Neovim Tutorials](https://neovim.io/doc/user/usr_toc.html#usr_toc.txt)
