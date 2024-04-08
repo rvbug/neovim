@@ -547,3 +547,4 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 [Vim Galore](https://github.com/mhinz/vim-galore)  
 [Comprehensive Vim Guide](https://thevaluable.dev/vim-commands-beginner/)  
 [Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+[Vim Tutorials](https://vimschool.netlify.app/basics/vimmodes/)
