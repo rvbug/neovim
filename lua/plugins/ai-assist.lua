@@ -1,5 +1,5 @@
 return {
-  "Exafunction/codeium.vim",
+   "Exafunction/codeium.vim",
 
 	-- "TabbyML/vim-tabby",
 	-- config = function()
