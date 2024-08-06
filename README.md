@@ -91,8 +91,8 @@ You can use `pacman` or `apt-get` if you are on other linux distributions.
 | python | *`brew install python`* | Install python |
 | rust | *`brew install rust`*| Rust compilers and toolchain|
 | yarn | *`brew install yarn`* | For Markdown preview |
-| Check for installed fonts | *`brew search "font name" `*| Installed fonts |
-| Check for new fonts | *`brew install --cask font-name`*| Installed fonts |
+| Check for installed fonts | *`brew search "font name" `*| Check for fonts |
+| Check for new fonts | *`brew install --cask font-name`*| Installing fonts |
 
 
 ## Setup
