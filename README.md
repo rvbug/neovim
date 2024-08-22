@@ -128,6 +128,16 @@ You can use `pacman` or `apt-get` if you are on other linux distributions.
 | Install Fonts | *`brew install --cask font-name`*| Installing fonts |
 
 
+For Ubuntu and other Linux systems, you need to install the nerd fonts or any fonts of your choice. 
+
+- Install fontconfig using `sudo apt install fontconfig`  
+- Select the nerd font of your choice  
+- Download the zip file  
+- create a directory called "font" under `~/.local/share/fonts`
+- unzip font file and move it to the above fonts folder
+- run the following command `fc-cache -fv`
+- Restart the terminal
+
 
 
 ## Setup
