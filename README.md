@@ -72,6 +72,38 @@ Before you go down this path, there are few things to keep in mind :
 | mac | *`brew install neovim`* | **`~/.config/nvim/`** | 
 | arch  | *`sudo pacman -S neovim`* | **`~/.config/nvim/`** | 
 | debian | *`sudo apt-get install neovim`* | **`~/.config/nvim/`** | 
+| ubuntu | Need to build from source, check the section below | **`~/.config/nvim/`** |
+
+---
+
+## Neovim on Ubuntu 
+If you follow `sudo apt install neovim`, and run `nvim --version` , it will point to 0.7 version.   
+The current version is `0.10`. Follow these steps for building neovim from source.
+
+### Build Pre-requisites
+- You should either have  `clang` or `gcc` , if not available install using `sudo apt install clang` or `sudo apt install gcc`
+- If you do not have CMake then install using `sudo apt install cmake` else you will have to install python3g `sudo apt install python` and then run `pip install cmake`
+- Next, install the following
+  ```bash
+  sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+  ```
+- Next, let us download the neovim source code 
+
+### Installing Neovim
+```bash
+
+# clone the repository
+git clone https://github.com/neovim/neovim
+cd neovim
+
+# set make
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+
+# Fetch the stable branch (latest one)
+git checkout stable
+sudo make install
+```
+
 
 ---
 
