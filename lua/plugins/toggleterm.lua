@@ -8,6 +8,8 @@ return {
         direction="float",
       }
     )
-  end,
 
+  vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
+
+end,
 }

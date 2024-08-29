@@ -16,4 +16,5 @@ return {
 		--   }
 		-- })
 	end,
+   vim.keymap.set("n", "<leader>zm", ":ZenMode<cr>")
 }

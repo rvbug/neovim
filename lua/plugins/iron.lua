@@ -24,19 +24,22 @@ return {
 			-- Iron doesn't set keymaps by default anymore.
 			-- You can set them here or manually add keymaps to the functions in iron.core
 			keymaps = {
-				send_motion = "<leader>ic",
-				-- visual_send = "<leader>sc",
 				send_file = "<leader>is",
 				send_line = "<leader>il",
+			  exit = "<leader>iq",
+
+				-- additional options not used
+        -- clear = "<leader>ic",
 				-- send_until_cursor = "<leader>su",
 				-- send_mark = "<leader>sm",
 				-- mark_motion = "<leader>mc",
-				-- mark_visual = "<leader>mc",
+				-- mark_visual = "<leader>mv",
 				-- remove_mark = "<leader>md",
 				-- cr = "<leader>s<cr>",
 				-- interrupt = "<leader>s<leader>",
-			   exit = "<leader>iq",
-				-- clear = "<leader>ic",
+				-- visual_send = "<leader>sc",
+				-- send_motion = "<leader>ic",
+
 			},
 			-- If the highlight is on, you can change how it looks
 			-- For the available options, check nvim_set_hl
@@ -48,7 +51,7 @@ return {
 
 		-- iron also has a list of commands, see :h iron-commands for all available commands
 		vim.keymap.set("n", "<leader>ii", "<cmd>IronRepl<cr>")
-		vim.keymap.set("n", "<leader>ir", "<cmd>IronRestart<cr>")
+		-- vim.keymap.set("n", "<leader>ir", "<cmd>IronRestart<cr>")
 		vim.keymap.set("n", "<leader>if", "<cmd>IronFocus<cr>")
 		vim.keymap.set("n", "<leader>ih", "<cmd>IronHide<cr>")
 	end,
