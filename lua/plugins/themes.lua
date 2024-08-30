@@ -1,12 +1,14 @@
 return {
 	-- "sainnhe/edge",
-	"tiagovla/tokyodark.nvim",
+	-- "tiagovla/tokyodark.nvim",
+   "AlexvZyl/nordic.nvim",
   lazy = false,
-	name = "tokyodark",
+	name = "nordic",
 	priority = 1000,
 
 	config = function()
-		vim.cmd("colorscheme tokyodark")
+		-- vim.cmd("colorscheme tokyodark")
+		 vim.cmd("colorscheme nordic")
 
 	end,
 }
