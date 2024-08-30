@@ -287,13 +287,11 @@ Here are the list of packages that is being used to get you started.
 |*comments.lua*| comments | Package | smart block commenting |
 |*floating-help.lua*| |Package | Floaing help |
 |*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
-|*greetings.lua* | alpha-nvim | Package | Dashboard or Welcome page |
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
 |*markdown.lua*| Markdown  | Package | Show Markdown preview |
 |*quarto.lua*| Quarto | Package | Support for Quarto files |
 |*iron.lua* | Iron | Package | Interactive REPL on neovim | 
-|*precognition.lua* | Suggestions | Package | helps vertical or horizontal suggest | 
 |*db.lua*| vim-dadbod | DB | Plugin to interact with the DB|
 |*db.lua*| vim-dadbod-ui| DB UI | UI plugin for DB |
 |*db.lua*| vim-dadbod-completion | DB | Completion engine for DB |
@@ -308,7 +306,6 @@ Here are the list of packages that is being used to get you started.
 |*completions.lua*| none-ls| LSP | fork of null-ls, it helps in LSP diagnostics, code-actions and much more|
 |*dap.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
 |*undotree.lua* | Undo Tree | Package | Visualizes the undo history|
-|*trouble.lua* | Trouble | Package | List to show diagnostics, references & telescope results | 
 |*ai-assist.lua*| Coding Assistant | AI | Using TabbyML/Codeium AI as your coding assistant. `Experiemental phase` |   
 ---
 
@@ -329,28 +326,54 @@ This is the basic configuration I use in **`keymaps.lua`**.
 | `:checkhealth` | check the status of your neovim, LSP, linters etc| 
 
 
-# Keymaps
+# General Keymaps
 The keyboard shortcut for specific commands used in **`keymaps.lua`**. 
 
 | Command | Mapped to | Description |
 | --- | ---| --- |
 | `"  "`| <space> | space is the leader Key  |
-|  `<leader>jk` | | change from insert to cmd mode |
 | `<leader>sv`  |`<C-w>v` |  split window vertically |
 | `<leader>sh`   |`<C-w>h` | split window horizontally |
 | `<leader>sx`   |`<C-w>x` | close currrent window |
-| `<leader>sm`|`:MaximizerToggle<cr>` | toggle window  |
 | `<leader>to`|`:tabnew<cr>`    | create new tab |
 | `<leader>tx`|`:tabclose<cr>` | close the current tab |
 | `<leader>tn`| `:tn<cr>`| move to the next tab |
 | `<leader>tp`|`:tp<cr>` | go to previous tab |
+| `<c-n>` | `:NvimTreeToggle` | Toggle File explorer| 
 |`<leader>tt` | `:ToggleTerm<cr>`| toggle terminal | 
+|`<leader>ut` | `:ToggleTree<cr>`| undo toggle tree | 
+|`<leader> zm` | `:ZenMode` | Jump into Zen mode | 
+|`<leader> gf` | `vim.lsp.buf.format` | Refresh the buffer` | 
 
 
-# Wezterm
+
+# Live Server
 | Command | Mapped to | Description |
 | --- | ---| --- |
-| `cntrl + shift + b`| Full Screen | Toggle full screen mode  |
+| `leader ss` |  Live Server Start  | HTML/CSS   |
+| `leader st`  |  Live Server Stop   | HTML/CSS  |
+
+# Markdown
+| Command | Mapped to |
+| --- | ---| 
+| `leader mp` |  Markdown Preview  | 
+| `leader mt`  |  Markdown Toggle  | 
+| `leader ms`  |  Markdown Preview stop  | 
+
+# Overseer
+| Command | Mapped to | Description | 
+| --- | ---| --- |
+| `leader or` | `:OverseerRun` | Markdown Preview  |
+| `leader ot` | `:OverseeToggle` | Markdown Preview  |
+
+# Quarto
+| Command | Mapped to | Description | 
+| --- | ---| --- |
+| `leader qa` | `:QuartoActivate` | Activate Quarto |
+| `leader qp` | `:QuartoPreview` | Preview works on .md & .qmd files|
+| `leader qc` | `:QuartoClosePreview` | Stop Preview |
+
+
 
 
 ---
@@ -392,13 +415,6 @@ Description: A completion engine plugin for neovim written in Lua.
 | `<C-Space>` | Completion | 
 
 ---
-
-# Nvim-Tree
-Description: By default, Neovim uses Netrw for file explorer. nvim-tree is a nice replacement for that. 
-
-| keystroke | action | 
-| --- | --- | 
-| `<c-n>` | Toggle File explorer| 
 
 
 # Treesitter 
@@ -442,14 +458,12 @@ After you have enabled you need to install the following libraries
 
 | keystroke | action | 
 | --- | --- | 
-| `<leader>sc` | visual_send | 
-| `<leader>if` | send_file | 
-| `<leader>il` | send_line | 
+| `<leader>is` | send file | 
+| `<leader>il` | send line | 
+| `<leader>ii` | open repl | 
+| `<leader>if` | iron focus | 
+| `<leader>if` | iron hide | 
 | `<leader>iq` | exit | 
-| `<leader>ii` | start repl | 
-| `<leader>ir` | iron restart | 
-| `<leader>ii` | iron focus | 
-| `<leader>ih` | iron hide | 
 
 
 
