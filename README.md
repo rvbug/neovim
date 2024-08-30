@@ -345,13 +345,15 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 |`<leader> zm` | `:ZenMode` | Jump into Zen mode | 
 |`<leader> gf` | `vim.lsp.buf.format` | Refresh the buffer` | 
 
-
+---
 
 # Live Server
 | Command | Mapped to | Description |
 | --- | ---| --- |
 | `leader ss` |  Live Server Start  | HTML/CSS   |
 | `leader st`  |  Live Server Stop   | HTML/CSS  |
+
+---
 
 # Markdown
 | Command | Mapped to |
@@ -360,21 +362,13 @@ The keyboard shortcut for specific commands used in **`keymaps.lua`**.
 | `leader mt`  |  Markdown Toggle  | 
 | `leader ms`  |  Markdown Preview stop  | 
 
+---
+
 # Overseer
 | Command | Mapped to | Description | 
 | --- | ---| --- |
 | `leader or` | `:OverseerRun` | Markdown Preview  |
 | `leader ot` | `:OverseeToggle` | Markdown Preview  |
-
-# Quarto
-| Command | Mapped to | Description | 
-| --- | ---| --- |
-| `leader qa` | `:QuartoActivate` | Activate Quarto |
-| `leader qp` | `:QuartoPreview` | Preview works on .md & .qmd files|
-| `leader qc` | `:QuartoClosePreview` | Stop Preview |
-
-
-
 
 ---
 
@@ -456,17 +450,12 @@ After you have enabled you need to install the following libraries
 * *`pip3 install Ipython`*
 * *`pip3 install quarto`*
 
-| keystroke | action | 
-| --- | --- | 
-| `<leader>is` | send file | 
-| `<leader>il` | send line | 
-| `<leader>ii` | open repl | 
-| `<leader>if` | iron focus | 
-| `<leader>if` | iron hide | 
-| `<leader>iq` | exit | 
-
-
-
+# Quarto
+| Command | Mapped to | Description | 
+| --- | ---| --- |
+| `leader qa` | `:QuartoActivate` | Activate Quarto |
+| `leader qp` | `:QuartoPreview` | Preview works on .md & .qmd files|
+| `leader qc` | `:QuartoClosePreview` | Stop Preview |
 
 # Tmux
 Tmux is a terminal multiplexer which helps you create multiple terminals at once. You can have sessions with each having multiple windows.
@@ -487,15 +476,11 @@ Now once you install any plugin `<leaderkey> I` to install them.
 My leader key is `c-b` so the command to install additional plugins is `c-b I`
 
 
-
-
 | keystroke | action | 
 | --- | --- | 
 | c-b | Leader key |
 | c-b<c> | create a new window |
 | c-b  I | Install additional plugins using TPM |
-
-
 
 
 # Debug Adapter Protocol (DAP)
@@ -548,9 +533,6 @@ Here are the steps for debugging lua code (incld. neovim)
 - run the debugger using `require"osv".run_this()` and you are good to go
 
 
-## For rust debugging
-TBD
-
 # AI Coding Assistant
 This configuration now supports two coding free version of coding assistant. This is still in the experiemental stage and I am still exploring multiple options.
 
@@ -590,8 +572,6 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 ---
 # Future Plans  
 * DAP support for Rust
-* Advance configuration & Docker support for TabbyML
-* Optimize for faster load time 
 ---
 # References
 [Neovim](https://neovim.io/)  
