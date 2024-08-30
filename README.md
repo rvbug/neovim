@@ -566,6 +566,15 @@ $> opam install ocaml-lsp-server odoc ocamlformat utop
 $> eval $(opam env --switch=default)
 ```
 
+---
+
+# Keymap References
+
+![image](https://github.com/user-attachments/assets/77711218-6494-4193-90db-92bd411a1f77)
+
+| Note: Motivation is from Viemu
+
+
 # Dotfiles
 Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want to setup and configure a new machine.
 
@@ -590,4 +599,5 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 [Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)   
 [Vim Tutorials](https://vimschool.netlify.app/basics/vimmodes/)  
 [Neovim Tutorials](https://neovim.io/doc/user/usr_toc.html#usr_toc.txt)  
-[Rust Setup on Neovim](https://neovim.io/doc/user/ft_rust.html)  
+[Rust Setup on Neovim](https://neovim.io/doc/user/ft_rust.html)    
+[Vim/Neovim Cheat sheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
