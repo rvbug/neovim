@@ -289,7 +289,8 @@ Here are the list of packages that is being used to get you started.
 |*neorg.lua*| neorg | Package | Emacs Org more equivalent for Neovim  |
 |*noice.lua* | noice | Package | UI for commandline, popup and messages |
 |*toggleterm.lua*| toggle term | Package | terminal for neovim |  
-|*markdown.lua*| Markdown  | Package | Show Markdown preview |
+|*markdown.lua*| Markdown  | Package | Show Markdown preview (paused) |
+|*render-markdown.lua*| Markdown  | Package | Work with inline Markdown file (new) |
 |*quarto.lua*| Quarto | Package | Support for Quarto files |
 |*iron.lua* | Iron | Package | Interactive REPL on neovim | 
 |*db.lua*| vim-dadbod | DB | Plugin to interact with the DB|
