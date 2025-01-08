@@ -14,7 +14,7 @@ return {
 				-- ensure certain lsps are installed
 				ensure_installed = {
 					"lua_ls",
-					"tsserver",
+					"ts_ls",
 					"rust_analyzer",
 					"bashls",
 					"pyright",
@@ -56,7 +56,7 @@ return {
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
