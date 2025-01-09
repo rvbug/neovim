@@ -59,9 +59,9 @@ return {
 			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.rust_analyzer.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.rust_analyzer.setup({
+			-- 	capabilities = capabilities,
+			-- })
 
 			lspconfig.html.setup({
 				capabilities = capabilities,

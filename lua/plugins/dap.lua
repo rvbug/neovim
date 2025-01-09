@@ -6,6 +6,7 @@ return {
 		"mfussenegger/nvim-dap",
 		"rcarriga/nvim-dap-ui",
 		"mfussenegger/nvim-dap-python",
+    "nvim-neotest/nvim-nio",
 	},
 
 	config = function()
@@ -63,7 +64,31 @@ return {
 					on_config(config)
 				end
 			end,
-		}
+		},
+
+    -- {
+    --   'mrcjkb/rustaceanvim',
+    --   version = '^5',
+    --   lazy = false,
+    --   ["rust-analyzer"] = {
+    --     cargo = {
+    --       allFeatures = true,
+    --     },
+    --   },
+    --   config = function()
+    --     local mason_registry = require("mason-registry")
+    --     local codelldb = mason_registry.get_package("codelldb")
+    --     local extension_path = codelldb:get_install_path() .. "/extension"
+    --     local codelldb_path = extension_path .. "/adapter/codelldb"
+    --     local liblldb_path = extension_path .. "/lldb/lib/liblldb.dylib"
+    --     local cfg = require('rustaceanvim.config')
+    --
+    --     vim.g.rustaceianvim = {
+    --       dap = {
+    --         adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path)
+    --       },
+    --     }
+
 
 		-- dap.adapters.lldb = {
 		-- 	type = "executable",
@@ -138,13 +163,10 @@ return {
 		vim.api.nvim_set_keymap("n", "<leader>3", [[:lua require"dap.ui.widgets".hover()<CR>]], { noremap = true })
 		vim.api.nvim_set_keymap("n", "<leader>4", [[:lua require"osv".launch({port = 8086})<CR>]], { noremap = true })
 		vim.api.nvim_set_keymap("n", "<leader>dr", [[:lua require"osv".run_this()})<CR>]], { noremap = true })
+    vim.api.nvim_set_keymap("n", "<Leader>rt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
+    vim.api.nvim_set_keymap("n", "<Leader>de", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Debugger reset" })
+    vim.api.nvim_set_keymap("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugger run last" })
 
-		-- vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, {})
-		-- vim.keymap.set("n", "<leader>dc", dap.continue, {})
-		-- vim.api.nvim_set_keymap("n", "<F9>", [[:lua require"dap".continue()<CR>]], { noremap = true })
-		-- vim.api.nvim_set_keymap("n", "<F10>", [[:lua require"dap".step_over()<CR>]], { noremap = true })
-		-- vim.api.nvim_set_keymap("n", "<S-F10>", [[:lua require"dap".step_into()<CR>]], { noremap = true })
-		-- vim.api.nvim_set_keymap("n", "<F12>", [[:lua require"dap.ui.widgets".hover()<CR>]], { noremap = true })
-		-- vim.api.nvim_set_keymap("n", "<F5>", [[:lua require"osv".launch({port = 8086})<CR>]], { noremap = true })
+
 	end,
 }
