@@ -308,6 +308,7 @@ Here are the list of packages that is being used to get you started.
 |*dap.lua*| Debugging | DAP | Helps you to support programming language like python (for now) | 
 |*undotree.lua* | Undo Tree | Package | Visualizes the undo history|
 |*ai-assist.lua*| Coding Assistant | AI | Using TabbyML/Codeium AI as your coding assistant. `Experiemental phase` |   
+|obsidian.lua| Obsidian | Package | Obsidian Notes |
 ---
 
 # Basic Editor Configuration 
