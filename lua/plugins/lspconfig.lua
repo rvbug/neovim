@@ -19,7 +19,6 @@ return {
 					"bashls",
 					"pyright",
 					"yamlls",
-					"ocamllsp",
 					"html",
 					"cssls",
 				},
