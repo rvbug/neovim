@@ -6,7 +6,7 @@ return {
 			sources = {
 				null_ls.builtins.formatting.stylua,    --lua
         null_ls.builtins.formatting.prettier,  --js
-        null_ls.builtins.diagnostics.eslint_d,   --js
+        -- null_ls.builtins.diagnostics.eslint_d,   --js
         null_ls.builtins.formatting.black,      --py
         --null_ls.builtins.diagnostics.flake8,   --py
 			},
