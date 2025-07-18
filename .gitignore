@@ -1,7 +1,5 @@
 # Compiled Lua sources
 luac.out
-/lua/casd/*
-lua/plugins/nui.lua
 
 # luarocks build files
 *.src.rock
