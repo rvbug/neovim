@@ -119,7 +119,7 @@ You can use `pacman` or `apt-get` if you are on other linux distributions.
 | ripgrep |*`brew install ripgrep`* | Real time grep |
 | lazygit | *`brew install lazygit`* | amazing UI for git |
 | tmux | *`brew install tmux`*| Terminal Multiplexer|
-| npm | *`brew install npm`*| To install tsserver via Mason + Markdown |
+| npm | *`brew install npm`*| To install tsserver via Mason + Markdown. Ensure you install npm before cloning this repo to avoid mason errors |
 | python | *`brew install python`* | Install python |
 | rust | *`brew install rust`*| Rust compilers and toolchain|
 | yarn | *`brew install yarn`* | For Markdown preview |
@@ -583,6 +583,7 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 ---
 # Future Plans  
 * DAP support for Rust
+* Update Neovim 0.10+ since it has support for LSP out-of-the-box.
 ---
 # References
 [Neovim](https://neovim.io/)  
