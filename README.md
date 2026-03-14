@@ -212,6 +212,6 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 [Vim Tutorials](https://vimschool.netlify.app/basics/vimmodes/)  
 [Neovim Tutorials](https://neovim.io/doc/user/usr_toc.html#usr_toc.txt)  
 [Rust Setup on Neovim](https://neovim.io/doc/user/ft_rust.html)    
-[Vim/Neovim Cheat sheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
+[Vim/Neovim Cheat sheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 
 
