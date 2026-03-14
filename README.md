@@ -179,3 +179,39 @@ fc-cache -fv
 fc-list :family | grep -i "Iosevka"
 
 ```
+# Keymap References
+
+![image](https://github.com/user-attachments/assets/77711218-6494-4193-90db-92bd411a1f77)
+
+| Note: Motivation is from Viemu
+
+
+# Dotfiles
+Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want to setup and configure a new machine.
+
+---
+# Future Plans  
+* DAP support for Rust
+* Update Neovim 0.10+ since it has support for LSP out-of-the-box.
+---
+# References
+[Neovim](https://neovim.io/)  
+[Vim](https://www.vim.org/)  
+[Lua](https://www.lua.org/)  
+[Neovim Learning Path](https://www.sherpa.guide/paths/neovim)  
+[Tmux](https://github.com/tmux/tmux/wiki)  
+[Wezterm](https://wezfurlong.org/wezterm/index.html)  
+[Neorg](https://github.com/nvim-neorg/neorg)  
+[What is DAP](https://microsoft.github.io/debug-adapter-protocol/)  
+[DAP Adapter Installation Instructions](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)  
+[Learn Neovim the smart way](https://ofirgall.github.io/learn-nvim/chapters/00-why-should-i-learn.html)  
+[Learn Vim the smart way](https://learnvim.irian.to/)  
+[Vim Galore](https://github.com/mhinz/vim-galore)  
+[Comprehensive Vim Guide](https://thevaluable.dev/vim-commands-beginner/)    
+[Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)   
+[Vim Tutorials](https://vimschool.netlify.app/basics/vimmodes/)  
+[Neovim Tutorials](https://neovim.io/doc/user/usr_toc.html#usr_toc.txt)  
+[Rust Setup on Neovim](https://neovim.io/doc/user/ft_rust.html)    
+[Vim/Neovim Cheat sheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
+
+
