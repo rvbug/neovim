@@ -1,4 +1,4 @@
-<p align="center"> < <img width="150" height="150" alt="Neovim-Vector" src="https://github.com/user-attachments/assets/33027080-fb46-4b09-963e-2ed58671fe33" /> </p>
+<p align="center"> <img width="150" height="150" alt="Neovim-Vector" src="https://github.com/user-attachments/assets/33027080-fb46-4b09-963e-2ed58671fe33" /> </p>
  
 <p align="center"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> <img height=21  src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"> </p>
 
@@ -192,7 +192,7 @@ Have a look my [.dotfile](https://github.com/rvbug/.dotfiles) repo if you want t
 ---
 # Future Plans  
 * DAP support for Rust
-* Update Neovim 0.10+ since it has support for LSP out-of-the-box.
+* Upgrade to Neovim 0.12 which is released on 30-Mar-26
 ---
 # References
 [Neovim](https://neovim.io/)  
